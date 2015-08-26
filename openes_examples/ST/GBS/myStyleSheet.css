@@ -1,0 +1,47 @@
+Constraint {
+    fillColor: white;
+    fontColor: #7A7A7A;
+    displayBorder: false;
+    elementIcon: false;
+}
+
+InteractionOperand {
+    fillColor: white;
+}
+
+TimeObservation {
+	elementIcon: false;
+	fontColor: #7A7A7A;
+}
+
+Lifeline {
+	fillColor: white;
+	elementIcon: false;
+	lineStyle: solid;
+	lineColor: #7A7A7A;
+}
+
+Edge {
+	lineColor: #CDCDCD;
+}
+
+CombinedFragment {
+	elementIcon: false;
+	lineColor: #7A7A7A;
+	
+}
+
+Message {
+	elementIcon: false;
+	lineWidth: 1;
+	
+}
+
+Gate {
+	fillColor: white;
+}
+
+Interaction {
+	fillColor: white;
+	lineColor: #7A7A7A;
+}

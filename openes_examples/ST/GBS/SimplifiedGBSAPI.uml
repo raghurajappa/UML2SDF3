@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:APIProfile="http://www.eclipse.org/papyrus/0.7.0/IPAPIProfile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Model xmi:id="_BuOuoNLREeSmqtnQ62uNjw" name="SimplifiedGBSAPI">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_KeAd0M83EeGprMePR3qJ9w" name="APICategories">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RLnlUM83EeGprMePR3qJ9w" name="control"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SqzgIM83EeGprMePR3qJ9w" name="config"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YErcQA1bEeKFY_X6jSaPXw" name="custom"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lfOP8GGIEeKXfP265X0nMw" name="hidden"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L48kQNLTEeSmqtnQ62uNjw" name="SimplifiedGBSAPI">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iq9dyFDKEeGCl_3_klLn6g" name="stmlld_gbs_SetRectangle">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_iq9dyVDKEeGCl_3_klLn6g">
+          <body>Set Rectangle origin and size of the plane (also known as viewport).</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9dylDKEeGCl_3_klLn6g" name="QueueHandleDL" type="_iq9ewVDKEeGCl_3_klLn6g"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jA87cM0DEeGlp-UqfsJdow" name="param" type="_i_wooM0DEeGlp-UqfsJdow"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9d0VDKEeGCl_3_klLn6g" name="return" type="_nnZRENDzEeGux7Mvw4E91Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iq9eGFDKEeGCl_3_klLn6g" name="stmlld_gbs_SetRotation">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_iq9eGVDKEeGCl_3_klLn6g">
+          <body>Id of the plane on which to apply rotation, and rotation angle</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9eGlDKEeGCl_3_klLn6g" name="QueueHandleDL" type="_iq9ewVDKEeGCl_3_klLn6g"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKeD0M0DEeGlp-UqfsJdow" name="param" type="_jJo9YM0DEeGlp-UqfsJdow"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9eH1DKEeGCl_3_klLn6g" name="return" type="_nnZRENDzEeGux7Mvw4E91Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iq9ejlDKEeGCl_3_klLn6g" name="stmlld_gbs_Process">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_iq9ej1DKEeGCl_3_klLn6g">
+          <body>Complete a command setting. 
+Execution order by means of an associated Commit: this is the only primitive that make the blitter actually process something.</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9ekFDKEeGCl_3_klLn6g" name="QueueHandleDL" type="_iq9ewVDKEeGCl_3_klLn6g"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jaYIEM0DEeGlp-UqfsJdow" name="param" type="_jZld4M0DEeGlp-UqfsJdow"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9ek1DKEeGCl_3_klLn6g" name="return" type="_nnZRENDzEeGux7Mvw4E91Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iq9eulDKEeGCl_3_klLn6g" name="stmlld_gbs_Clear">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_iq9eu1DKEeGCl_3_klLn6g">
+          <body>Clear groups of information.</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9evFDKEeGCl_3_klLn6g" name="QueueHandleDL" type="_iq9ewVDKEeGCl_3_klLn6g"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jfOy4M0DEeGlp-UqfsJdow" name="param" type="_jdsh0M0DEeGlp-UqfsJdow"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_iq9ev1DKEeGCl_3_klLn6g" name="return" type="_nnZRENDzEeGux7Mvw4E91Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vk6eYNMIEeS4Zfl4qALxyw" name="local_types">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_nnZRENDzEeGux7Mvw4E91Q" name="stmlld_gbs_ImmediateError_e"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_iq9ewVDKEeGCl_3_klLn6g" name="stmlld_gbs_QueueHandle_t"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_EU_cYOtrEeGBJuMpTH0KhQ" name="stmlld_gbs_PlaneId_t">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Qr7YEAlgEeK2JI_aDkIqNg">
+          <body>0 = Target plane
+1,2,3,4... = Input planes</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_0QfTgOqlEeG5cZwkTBHqzA" name="stmlld_gbs_uint16_t"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_jhDyEEB2EeKQUs7jSkoW9A" name="stmlld_gbs_uint32_t"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vk6eYdMIEeS4Zfl4qALxyw" name="Structs">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_i_wooM0DEeGlp-UqfsJdow" name="stmlld_gbs_RectangleParam_t">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_i_x2wM0DEeGlp-UqfsJdow" name="PlaneId" type="_EU_cYOtrEeGBJuMpTH0KhQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y4ru8M9IEeGdY_paiidJYg">
+            <body>PlaneId is 0 for target plane, 1 2 3 4 for input planes</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_i_5LgM0DEeGlp-UqfsJdow" name="OriginX" type="_0QfTgOqlEeG5cZwkTBHqzA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y4sWAM9IEeGdY_paiidJYg">
+            <body>Horizontal origin of the viewport (in pixels).</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_i__5MM0DEeGlp-UqfsJdow" name="OriginY" type="_0QfTgOqlEeG5cZwkTBHqzA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y4sWAs9IEeGdY_paiidJYg">
+            <body>Vertical origin of the viewport (in pixels).</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jAmWIM0DEeGlp-UqfsJdow" name="Width" type="_0QfTgOqlEeG5cZwkTBHqzA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y4sWBM9IEeGdY_paiidJYg">
+            <body>Width of the viewport (in pixels).</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jAtq4M0DEeGlp-UqfsJdow" name="Height" type="_0QfTgOqlEeG5cZwkTBHqzA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y4s9EM9IEeGdY_paiidJYg">
+            <body>Height of the viewport (in pixels).</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LiGNoEBtEeKQUs7jSkoW9A" name="RLDBufSize" type="_jhDyEEB2EeKQUs7jSkoW9A">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_YZkVMM-mEeOTpp7xdzPe3g">
+            <body>Size of the RLD buffer (in Bytes), only for BD-RLD format: 
+X and Y are meaningless in this case, and RLDBufSize is used instead.
+</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_jJo9YM0DEeGlp-UqfsJdow" name="stmlld_gbs_RotationParam_t">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_B1rKwJS8EeOomtgDB5xwRQ" name="PlaneId" type="_EU_cYOtrEeGBJuMpTH0KhQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_B1rKwZS8EeOomtgDB5xwRQ">
+            <body>Id of the plane on which to apply rotation.
+PlaneId is 0 for target plane, 1 2 3 4 for input planes.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jKRPic0DEeGlp-UqfsJdow" name="Angle" type="_iqchpVDKEeGCl_3_klLn6g">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y41f8M9IEeGdY_paiidJYg">
+            <body>Rotation angle, clockwise (0, +90, +180, +270).</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_jZld4M0DEeGlp-UqfsJdow" name="stmlld_gbs_ProcessParam_t">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_EIs8oO0HEeGZgvsLPoQrgA">
+          <body>Process mark the end of one command setting.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jZun0M0DEeGlp-UqfsJdow" name="PlaneEnable" type="_iqb6R1DKEeGCl_3_klLn6g">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y5CUQM9IEeGdY_paiidJYg">
+            <body>Enable each plane used for the Process() primitive (referred by plane ID).</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_jdsh0M0DEeGlp-UqfsJdow" name="stmlld_gbs_ClearParam_t">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_EI2toO0HEeGZgvsLPoQrgA">
+          <body>Clear performs SW and FW reset of processing context created/updated by primitives.
+No impact on HW. Commands on-going before Clear gets called are completed as usual;
+i.e. Clear does not alter pre-existing commands.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jd2S0M0DEeGlp-UqfsJdow" name="PlaneClear" type="_iqb6R1DKEeGCl_3_klLn6g">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y5Ewhs9IEeGdY_paiidJYg">
+            <body>Enable each plane to be cleared (referred by plane ID).</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jd9nkM0DEeGlp-UqfsJdow" name="StageClear" type="_iqb6R1DKEeGCl_3_klLn6g">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y5FXkM9IEeGdY_paiidJYg">
+            <body>Enable each stage to be cleared (referred by stage ID)</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vlEPYNMIEeS4Zfl4qALxyw" name="enums">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_iqchpVDKEeGCl_3_klLn6g" name="stmlld_gbs_AngleValues_e">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqchplDKEeGCl_3_klLn6g" name="GBS_P0CLOCKWISE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqchp1DKEeGCl_3_klLn6g">
+            <body>Disable rotation</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqchqFDKEeGCl_3_klLn6g" name="GBS_P90CLOCKWISE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqchqVDKEeGCl_3_klLn6g">
+            <body>Rotation of ninety degrees (clockwise)</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqchqlDKEeGCl_3_klLn6g" name="GBS_P180CLOCKWISE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqchq1DKEeGCl_3_klLn6g">
+            <body>No rotation, only horizontal flip and vertical flips</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqchrFDKEeGCl_3_klLn6g" name="GBS_P270CLOCKWISE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqchrVDKEeGCl_3_klLn6g">
+            <body>Rotation of ninety degrees (clockwise) and horizontal and vertical flips</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_iqb6R1DKEeGCl_3_klLn6g" name="stmlld_gbs_bool_e">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqb6SFDKEeGCl_3_klLn6g" name="GBS_FALSE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqb6SVDKEeGCl_3_klLn6g">
+            <body>Disable</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iqb6SlDKEeGCl_3_klLn6g" name="GBS_TRUE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iqb6S1DKEeGCl_3_klLn6g">
+            <body>Enable</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xBdXwNRvEeS68ZmrznEdfA" name="UseCase">
+      <packagedElement xmi:type="uml:Class" xmi:id="__URWENRvEeS68ZmrznEdfA" name="TestBench">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DJAL8NRwEeS68ZmrznEdfA" name="testCode" type="_MWTB8NRwEeS68ZmrznEdfA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_R_FPYNRwEeS68ZmrznEdfA" name="simplifiedGBSAPI" type="_L48kQNLTEeSmqtnQ62uNjw"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_TAGAcNRwEeS68ZmrznEdfA" name="Connector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_TAGAcdRwEeS68ZmrznEdfA" role="_DJAL8NRwEeS68ZmrznEdfA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAGActRwEeS68ZmrznEdfA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAGAc9RwEeS68ZmrznEdfA" value="1"/>
+          </end>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_TAGAdNRwEeS68ZmrznEdfA" role="_R_FPYNRwEeS68ZmrznEdfA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAGAddRwEeS68ZmrznEdfA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAGAdtRwEeS68ZmrznEdfA" value="1"/>
+          </end>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MWTB8NRwEeS68ZmrznEdfA" name="TestEnvironment"/>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_YFw5wNRwEeS68ZmrznEdfA" name="SetRectangleAndRotation">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_an7UgNRwEeS68ZmrznEdfA" name="Lifeline" represents="_DJAL8NRwEeS68ZmrznEdfA" coveredBy="_eBbm8NRwEeS68ZmrznEdfA _eBbm8tRwEeS68ZmrznEdfA _eBbm8dRwEeS68ZmrznEdfA _jg1O4dRwEeS68ZmrznEdfA _HirsgtRxEeS68ZmrznEdfA _XzN7wdRxEeS68ZmrznEdfA _hNTQktRxEeS68ZmrznEdfA _uk5j0dRxEeS68ZmrznEdfA _7eJuMtRxEeS68ZmrznEdfA"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_bJZp4NRwEeS68ZmrznEdfA" name="Lifeline0" represents="_R_FPYNRwEeS68ZmrznEdfA" coveredBy="_jg1O4tRwEeS68ZmrznEdfA _lKBaQtRwEeS68ZmrznEdfA _lKBaQdRwEeS68ZmrznEdfA _5UfIcNRwEeS68ZmrznEdfA _HirsgdRxEeS68ZmrznEdfA _XzN7wtRxEeS68ZmrznEdfA _YMD5lNRxEeS68ZmrznEdfA _YMD5k9RxEeS68ZmrznEdfA _hNTQkdRxEeS68ZmrznEdfA _uk5j0tRxEeS68ZmrznEdfA _uwqH5NRxEeS68ZmrznEdfA _uwqH49RxEeS68ZmrznEdfA _7eJuMdRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eBbm8NRwEeS68ZmrznEdfA" name="BehaviorExecSpecStart" covered="_an7UgNRwEeS68ZmrznEdfA" execution="_eBbm8dRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_eBbm8dRwEeS68ZmrznEdfA" name="BehaviorExecSpec" covered="_an7UgNRwEeS68ZmrznEdfA" finish="_eBbm8tRwEeS68ZmrznEdfA" start="_eBbm8NRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5UfIcNRwEeS68ZmrznEdfA" name="ActionExecSpecStart" covered="_bJZp4NRwEeS68ZmrznEdfA" execution="_lKBaQdRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jg1O4dRwEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_MessageSend" covered="_an7UgNRwEeS68ZmrznEdfA" message="_jg1O4NRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_lKBaQdRwEeS68ZmrznEdfA" name="ActionExecSpec" covered="_bJZp4NRwEeS68ZmrznEdfA" finish="_lKBaQtRwEeS68ZmrznEdfA" start="_5UfIcNRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jg1O4tRwEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_MessageRecv" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_jg1O4NRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HirsgdRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_Message0Send" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_HirsgNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_lKBaQtRwEeS68ZmrznEdfA" name="ActionExecSpecFinish" covered="_bJZp4NRwEeS68ZmrznEdfA" execution="_lKBaQdRwEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HirsgtRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_Message0Recv" covered="_an7UgNRwEeS68ZmrznEdfA" message="_HirsgNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XzN7wdRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_MessageSend" covered="_an7UgNRwEeS68ZmrznEdfA" message="_XzN7wNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_YMD5k9RxEeS68ZmrznEdfA" name="BehaviorExecSpec0" covered="_bJZp4NRwEeS68ZmrznEdfA" finish="_YMD5lNRxEeS68ZmrznEdfA" start="_XzN7wtRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XzN7wtRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_MessageRecv" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_XzN7wNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hNTQkdRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_Message0Send" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_hNTQkNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hNTQktRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_Message0Recv" covered="_an7UgNRwEeS68ZmrznEdfA" message="_hNTQkNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_YMD5lNRxEeS68ZmrznEdfA" name="BehaviorExecSpec0Finish" covered="_bJZp4NRwEeS68ZmrznEdfA" execution="_YMD5k9RxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uk5j0dRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_MessageSend" covered="_an7UgNRwEeS68ZmrznEdfA" message="_uk5j0NRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uwqH49RxEeS68ZmrznEdfA" name="BehaviorExecSpec1" covered="_bJZp4NRwEeS68ZmrznEdfA" finish="_uwqH5NRxEeS68ZmrznEdfA" start="_uk5j0tRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uk5j0tRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_MessageRecv" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_uk5j0NRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7eJuMdRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_Message0Send" covered="_bJZp4NRwEeS68ZmrznEdfA" message="_7eJuMNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_uwqH5NRxEeS68ZmrznEdfA" name="BehaviorExecSpec1Finish" covered="_bJZp4NRwEeS68ZmrznEdfA" execution="_uwqH49RxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7eJuMtRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_Message0Recv" covered="_an7UgNRwEeS68ZmrznEdfA" message="_7eJuMNRxEeS68ZmrznEdfA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eBbm8tRwEeS68ZmrznEdfA" name="BehaviorExecSpecFinish" covered="_an7UgNRwEeS68ZmrznEdfA" execution="_eBbm8dRwEeS68ZmrznEdfA"/>
+        <message xmi:type="uml:Message" xmi:id="_jg1O4NRwEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_Message" receiveEvent="_jg1O4tRwEeS68ZmrznEdfA" sendEvent="_jg1O4dRwEeS68ZmrznEdfA" signature="_iq9dyFDKEeGCl_3_klLn6g"/>
+        <message xmi:type="uml:Message" xmi:id="_HirsgNRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRectangle_Message0" messageSort="reply" receiveEvent="_HirsgtRxEeS68ZmrznEdfA" sendEvent="_HirsgdRxEeS68ZmrznEdfA" signature="_iq9dyFDKEeGCl_3_klLn6g"/>
+        <message xmi:type="uml:Message" xmi:id="_XzN7wNRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_Message" receiveEvent="_XzN7wtRxEeS68ZmrznEdfA" sendEvent="_XzN7wdRxEeS68ZmrznEdfA" signature="_iq9eGFDKEeGCl_3_klLn6g"/>
+        <message xmi:type="uml:Message" xmi:id="_hNTQkNRxEeS68ZmrznEdfA" name="stmlld_gbs_SetRotation_Message0" messageSort="reply" receiveEvent="_hNTQktRxEeS68ZmrznEdfA" sendEvent="_hNTQkdRxEeS68ZmrznEdfA" signature="_iq9eGFDKEeGCl_3_klLn6g"/>
+        <message xmi:type="uml:Message" xmi:id="_uk5j0NRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_Message" receiveEvent="_uk5j0tRxEeS68ZmrznEdfA" sendEvent="_uk5j0dRxEeS68ZmrznEdfA" signature="_iq9ejlDKEeGCl_3_klLn6g"/>
+        <message xmi:type="uml:Message" xmi:id="_7eJuMNRxEeS68ZmrznEdfA" name="stmlld_gbs_Process_Message0" messageSort="reply" receiveEvent="_7eJuMtRxEeS68ZmrznEdfA" sendEvent="_7eJuMdRxEeS68ZmrznEdfA" signature="_iq9ejlDKEeGCl_3_klLn6g"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JeEvMNLREeSmqtnQ62uNjw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JehbINLREeSmqtnQ62uNjw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/IPAPIProfile#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://ST_PROFILES/Bitfield/BitfieldProfile.profile.uml#_lBNKUAljEeGphrhgUwQUCQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D4BOEtRwEeS68ZmrznEdfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D4w08NRwEeS68ZmrznEdfA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <APIProfile:Primitive xmi:id="_iq-E0lDKEeGCl_3_klLn6g" base_Operation="_iq9eulDKEeGCl_3_klLn6g" category="_RMqHIM83EeGprMePR3qJ9w"/>
+  <APIProfile:TypedElement xmi:id="_jfR2MM0DEeGlp-UqfsJdow" base_TypedElement="_jfOy4M0DEeGlp-UqfsJdow" isPointer="true"/>
+  <APIProfile:TypedElement xmi:id="_iq-E01DKEeGCl_3_klLn6g" base_TypedElement="_iq9ev1DKEeGCl_3_klLn6g"/>
+  <APIProfile:TypedElement xmi:id="_iq-FGFDKEeGCl_3_klLn6g" base_TypedElement="_iq9eGlDKEeGCl_3_klLn6g"/>
+  <APIProfile:TypedElement xmi:id="_jKhHIM0DEeGlp-UqfsJdow" base_TypedElement="_jKeD0M0DEeGlp-UqfsJdow" isPointer="true"/>
+  <APIProfile:TypedElement xmi:id="_iq-E1FDKEeGCl_3_klLn6g" base_TypedElement="_iq9evFDKEeGCl_3_klLn6g"/>
+  <APIProfile:Category xmi:id="_SrQMEM83EeGprMePR3qJ9w" base_EnumerationLiteral="_SqzgIM83EeGprMePR3qJ9w"/>
+  <APIProfile:FieldValue xmi:id="_iqdIX1DKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqchplDKEeGCl_3_klLn6g" value="0x0"/>
+  <APIProfile:Primitive xmi:id="_iq-E6lDKEeGCl_3_klLn6g" base_Operation="_iq9ejlDKEeGCl_3_klLn6g" category="_RMqHIM83EeGprMePR3qJ9w"/>
+  <APIProfile:Category xmi:id="_YFQEAA1bEeKFY_X6jSaPXw" base_EnumerationLiteral="_YErcQA1bEeKFY_X6jSaPXw"/>
+  <APIProfile:TypedElement xmi:id="_jd5WIM0DEeGlp-UqfsJdow" base_TypedElement="_jd2S0M0DEeGlp-UqfsJdow">
+    <tableMaxStrings>STMLLD_GBS_NB_PLANE</tableMaxStrings>
+  </APIProfile:TypedElement>
+  <APIProfile:Category xmi:id="_RMqHIM83EeGprMePR3qJ9w" base_EnumerationLiteral="_RLnlUM83EeGprMePR3qJ9w"/>
+  <APIProfile:Primitive xmi:id="_iq-FFlDKEeGCl_3_klLn6g" base_Operation="_iq9eGFDKEeGCl_3_klLn6g" category="_SrQMEM83EeGprMePR3qJ9w"/>
+  <APIProfile:TypedElement xmi:id="_jabLYM0DEeGlp-UqfsJdow" base_TypedElement="_jaYIEM0DEeGlp-UqfsJdow" isPointer="true"/>
+  <APIProfile:TypedElement xmi:id="_jA_XsM0DEeGlp-UqfsJdow" base_TypedElement="_jA87cM0DEeGlp-UqfsJdow" isPointer="true"/>
+  <APIProfile:TypedElement xmi:id="_iq-E61DKEeGCl_3_klLn6g" base_TypedElement="_iq9ek1DKEeGCl_3_klLn6g"/>
+  <APIProfile:MinMaxPrimitiveType xmi:id="_TH7z0Ol1EeKtj8asWsLiBQ" base_PrimitiveType="_0QfTgOqlEeG5cZwkTBHqzA" minValue="0" maxValue="65535"/>
+  <APIProfile:TypedElement xmi:id="_jAwHIM0DEeGlp-UqfsJdow" base_TypedElement="_jAtq4M0DEeGlp-UqfsJdow"/>
+  <APIProfile:TypedElement xmi:id="_iq-FM1DKEeGCl_3_klLn6g" base_TypedElement="_iq9d0VDKEeGCl_3_klLn6g"/>
+  <APIProfile:TypedElement xmi:id="_jeAq4M0DEeGlp-UqfsJdow" base_TypedElement="_jd9nkM0DEeGlp-UqfsJdow">
+    <tableMaxStrings>STMLLD_GBS_NB_STAGE</tableMaxStrings>
+  </APIProfile:TypedElement>
+  <APIProfile:FieldValue xmi:id="_iqdIaVDKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqb6SlDKEeGCl_3_klLn6g" value="0x1"/>
+  <APIProfile:TypedElement xmi:id="_jAC8gM0DEeGlp-UqfsJdow" base_TypedElement="_i__5MM0DEeGlp-UqfsJdow"/>
+  <APIProfile:TypedElement xmi:id="_jZxrIM0DEeGlp-UqfsJdow" base_TypedElement="_jZun0M0DEeGlp-UqfsJdow">
+    <tableMaxStrings>STMLLD_GBS_NB_PLANE</tableMaxStrings>
+  </APIProfile:TypedElement>
+  <APIProfile:TypedElement xmi:id="_iq-E7FDKEeGCl_3_klLn6g" base_TypedElement="_iq9ekFDKEeGCl_3_klLn6g"/>
+  <APIProfile:TypedElement xmi:id="_i_0TAM0DEeGlp-UqfsJdow" base_TypedElement="_i_x2wM0DEeGlp-UqfsJdow"/>
+  <APIProfile:TypedElement xmi:id="_i_7nwM0DEeGlp-UqfsJdow" base_TypedElement="_i_5LgM0DEeGlp-UqfsJdow" dynamic="12"/>
+  <APIProfile:Category xmi:id="_lgZ7sGGIEeKXfP265X0nMw" base_EnumerationLiteral="_lfOP8GGIEeKXfP265X0nMw"/>
+  <APIProfile:FieldValue xmi:id="_iqdIa1DKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqb6SFDKEeGCl_3_klLn6g" value="0x0"/>
+  <APIProfile:TypedElement xmi:id="_jKUS0M0DEeGlp-UqfsJdow" base_TypedElement="_jKRPic0DEeGlp-UqfsJdow"/>
+  <APIProfile:TypedElement xmi:id="_iq-FNFDKEeGCl_3_klLn6g" base_TypedElement="_iq9dylDKEeGCl_3_klLn6g"/>
+  <APIProfile:CategoryList xmi:id="_KfIfMM83EeGprMePR3qJ9w" base_Enumeration="_KeAd0M83EeGprMePR3qJ9w"/>
+  <APIProfile:FieldValue xmi:id="_iqdIWVDKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqchrFDKEeGCl_3_klLn6g" value="0x3"/>
+  <APIProfile:MinMaxPrimitiveType xmi:id="_fBjU0OozEeKtj8asWsLiBQ" base_PrimitiveType="_jhDyEEB2EeKQUs7jSkoW9A" minValue="0" maxValue="4294967295"/>
+  <APIProfile:FieldValue xmi:id="_iqdIXVDKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqchqFDKEeGCl_3_klLn6g" value="0x1"/>
+  <APIProfile:TypedElement xmi:id="_Limj8EBtEeKQUs7jSkoW9A" base_TypedElement="_LiGNoEBtEeKQUs7jSkoW9A" minValue="" maxValue="16777215"/>
+  <APIProfile:TypedElement xmi:id="_B1rx0JS8EeOomtgDB5xwRQ" base_TypedElement="_B1rKwJS8EeOomtgDB5xwRQ" minValue="0" maxValue="STMLLD_GBS_NB_PLANE"/>
+  <APIProfile:TypedElement xmi:id="_jApZcM0DEeGlp-UqfsJdow" base_TypedElement="_jAmWIM0DEeGlp-UqfsJdow"/>
+  <APIProfile:FieldValue xmi:id="_iqdIW1DKEeGCl_3_klLn6g" base_EnumerationLiteral="_iqchqlDKEeGCl_3_klLn6g" value="0x2"/>
+  <APIProfile:TypedElement xmi:id="_iq-FF1DKEeGCl_3_klLn6g" base_TypedElement="_iq9eH1DKEeGCl_3_klLn6g"/>
+  <APIProfile:Primitive xmi:id="_iq-FMlDKEeGCl_3_klLn6g" base_Operation="_iq9dyFDKEeGCl_3_klLn6g" category="_SrQMEM83EeGprMePR3qJ9w"/>
+</xmi:XMI>

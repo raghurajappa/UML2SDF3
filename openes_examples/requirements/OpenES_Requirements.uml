@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Annotation="http://OSMK/schemas/Annotation/_hjMIAD83EeSzHs6IsP0zcA/3" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://OSMK/schemas/Annotation/_hjMIAD83EeSzHs6IsP0zcA/3 ../OSMKProfile/osmk.profile.uml#_hjNWID83EeSzHs6IsP0zcA http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+  <uml:Model xmi:id="_7UYicDgWEeSW7vxfDQgMFw" clientDependency="_GYEhQdbnEeSyeMP5nMIeKA" name="OpenESRequirements">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LMQB8Tg2EeSL_oCrEVX-XQ" clientDependency="_GXvxINbnEeSyeMP5nMIeKA" name="OSMK-Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcqcgTg2EeSL_oCrEVX-XQ" name="Req-1">
+        <ownedComment xmi:id="_LcsRsDg2EeSL_oCrEVX-XQ">
+          <body>Enables usage of the OSMK in domains where the system of interest not only encompasses software or digital processing, but as well analogue processing stages, such as audio, video or radio signal acquisitition and/or restitution.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LconUDg2EeSL_oCrEVX-XQ" name="Req-2">
+        <ownedComment xmi:id="_LcqcgDg2EeSL_oCrEVX-XQ">
+          <body>[ST]Avoid monolitics models. Enables decomposition of the system of interest into lower complexity and well-contained sub-systems.
+Typical example is decomposition of a radio stack according to the OSI-layer model, for which a sub-system will be identified for each layer.
+[TCS]Enables decomposition of the system of interest into lower complexity and well-contained sub-systems.
+Typical example is decomposition of a radio stack according to the OSI-layer model, for which a sub-system will be identified for each layer.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcmLEDg2EeSL_oCrEVX-XQ" name="Req-3">
+        <ownedComment xmi:id="_LcoAQDg2EeSL_oCrEVX-XQ">
+          <body>To reenforce modularity</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc4e8Dg2EeSL_oCrEVX-XQ" name="Req-4">
+        <ownedComment xmi:id="_Lc6UIDg2EeSL_oCrEVX-XQ">
+          <body>Capability for components to be refined as an assembly of components</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc0NgDg2EeSL_oCrEVX-XQ" name="Req-5">
+        <ownedComment xmi:id="_Lc2CsDg2EeSL_oCrEVX-XQ">
+          <body>The categories may be proprietary of OSMK standard, but at least a reference to a category must be available in order for the OSMK to define the type of processing (tools) that can be applied to the model; for instance the level of abstraction (e.g. TLM, RTL); the indentification may follow the classical VLNV (Vendor, Library, Name, Version) format like in IP-XACT; this will be usefull for applying a design flow model</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lcv8ETg2EeSL_oCrEVX-XQ" name="Req-6">
+        <ownedComment xmi:id="_LcxxQDg2EeSL_oCrEVX-XQ">
+          <body>This is required to remain technology neutral, in particular with regards to hardware / software implementation choices, end programming paradigms choices in the applicative domain (e.g. DPP, DSP, FPGA…)</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcuG4Dg2EeSL_oCrEVX-XQ" name="Req-7">
+        <ownedComment xmi:id="_Lcv8EDg2EeSL_oCrEVX-XQ">
+          <body>While message-oriented paradigm is common case in software-dominant systems and protocols (UML, IDL, CORBA, …), parts where intensive data/signal processing is required have a need for flow-oriented interactions, especially on the data path.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdN2ITg2EeSL_oCrEVX-XQ" name="Req-11">
+        <ownedComment xmi:id="_LdPrUDg2EeSL_oCrEVX-XQ">
+          <body>Enforcing separation of concerns between configuration state and excution state. &quot;IDLE&quot; state allows to set component attributes avoiding interaction between component.  
+For example, SCA components can be set in &quot;START&quot; or &quot;STOP&quot; mode. By stopping a component, all incoming calls are queued and you can perform reconfiguration on it.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdC3ATg2EeSL_oCrEVX-XQ" name="Req-18">
+        <ownedComment xmi:id="_LdEsMDg2EeSL_oCrEVX-XQ">
+          <body>Tools like DOORS.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcT3MDg2EeSL_oCrEVX-XQ" name="Req-41">
+        <ownedComment xmi:id="_LcVFUDg2EeSL_oCrEVX-XQ" annotatedElement="_LcT3MDg2EeSL_oCrEVX-XQ">
+          <body>This can be achieved with the SysML requirements specific elements. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcQM0Tg2EeSL_oCrEVX-XQ" name="Req-43">
+        <ownedComment xmi:id="_LcRa8Dg2EeSL_oCrEVX-XQ">
+          <body>For instance: range of a operation parameter value depending on a model element value</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le0_sDg2EeSL_oCrEVX-XQ" name="Req-44"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le2N0Dg2EeSL_oCrEVX-XQ" name="Req-47">
+        <ownedComment xmi:id="_Le204Dg2EeSL_oCrEVX-XQ">
+          <body>Enables to determine the exact scope of the applicative software from the scope of platform-dependent software.
+
+Note that the platform support may be null for sub-systems that are entirely implemented in software.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le8UcDg2EeSL_oCrEVX-XQ" name="Req-50">
+        <ownedComment xmi:id="_Le87gDg2EeSL_oCrEVX-XQ">
+          <body>Enables to complement the structural assumptions of the structural model with executable modelling to validate the way components shall execute and correctness of their joint interaction.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le7GUTg2EeSL_oCrEVX-XQ" name="Req-54"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LepZgDg2EeSL_oCrEVX-XQ" name="Req-55" visibility="private"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LelIETg2EeSL_oCrEVX-XQ" name="Req-58"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeuSADg2EeSL_oCrEVX-XQ" name="Req-63">
+        <ownedComment xmi:id="_LevgIDg2EeSL_oCrEVX-XQ">
+          <body>Synchronization process at low level has to be defined.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeUpYTg2EeSL_oCrEVX-XQ" name="Req-67">
+        <ownedComment xmi:id="_LeV3gDg2EeSL_oCrEVX-XQ">
+          <body>The Action Language for FundationalUML (ALF) can be used as an alternative to activity diagram</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld1hMDg2EeSL_oCrEVX-XQ" name="Req-94">
+        <ownedComment xmi:id="_Ld2vUDg2EeSL_oCrEVX-XQ">
+          <body>To be standard compliant</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LddtwDg2EeSL_oCrEVX-XQ" name="Req-105"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdZcUDg2EeSL_oCrEVX-XQ" name="Req-107">
+        <ownedComment xmi:id="_LdbRgDg2EeSL_oCrEVX-XQ">
+          <body>Model checkers at System Level</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld5LkDg2EeSL_oCrEVX-XQ" name="Req-92">
+        <ownedComment xmi:id="_Ld6ZsDg2EeSL_oCrEVX-XQ">
+          <body>Facilitate efficient and correct integration of subsystems.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld-EEDg2EeSL_oCrEVX-XQ" name="Req-10">
+        <ownedComment xmi:id="_Ld_5QDg2EeSL_oCrEVX-XQ">
+          <body>This ontology will be referenced in order to express the type of information available at the several levels of data fragment and how the data fragement are interrelated</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LenkUTg2EeSL_oCrEVX-XQ" name="Req-56">
+        <ownedComment xmi:id="_LeoycDg2EeSL_oCrEVX-XQ">
+          <body>Alf statement can be compiled into executable fUML activities. Papyrus includes support for execution of fUML activities. This can be used as a basis for very early simulation in the development process supported by the OTC.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ler1wDg2EeSL_oCrEVX-XQ" name="Req-65">
+        <ownedComment xmi:id="_LetD4Dg2EeSL_oCrEVX-XQ">
+          <body>More and more digital(and embedded software) assisted analogue systems are needed to meet analogue performance and functional flexibility</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LPdG8Dg2EeSL_oCrEVX-XQ" name="Other-Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcVsYDg2EeSL_oCrEVX-XQ" name="Req-40">
+        <ownedComment xmi:id="_LcW6gDg2EeSL_oCrEVX-XQ">
+          <body>Facilitate efficient and correct integration of subsystems.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcXhkDg2EeSL_oCrEVX-XQ" name="Req-22">
+        <ownedComment xmi:id="_LcZWwDg2EeSL_oCrEVX-XQ">
+          <body>Do not limit techniques to single core only.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcZWwTg2EeSL_oCrEVX-XQ" name="Req-23">
+        <ownedComment xmi:id="_LcbL8Dg2EeSL_oCrEVX-XQ">
+          <body>Facilitate efficient and correct integration of subsystems.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcbL8Tg2EeSL_oCrEVX-XQ" name="Req-24">
+        <ownedComment xmi:id="_LcdBIDg2EeSL_oCrEVX-XQ">
+          <body>Not fundamental if one considers that reactivity will always be largely better than a human operator perception. Attribute values changes with time constraint</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcdBITg2EeSL_oCrEVX-XQ" name="Req-25">
+        <ownedComment xmi:id="_Lce2UDg2EeSL_oCrEVX-XQ">
+          <body>This is a fundamental aspect in order to make consistent system models for real-time solutions. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc8wYDg2EeSL_oCrEVX-XQ" name="Req-8">
+        <ownedComment xmi:id="_Lc-lkDg2EeSL_oCrEVX-XQ">
+          <body>Same idea as what SysML authorize with streams.
+
+This is an essential dimension compared to most executable modelling solutions, where all interactions are either message-based (UML, IDL, …) or flow-based (Simulink), depending on the underlying execution mechanism.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdBB0Dg2EeSL_oCrEVX-XQ" name="Req-17">
+        <ownedComment xmi:id="_LdC3ADg2EeSL_oCrEVX-XQ">
+          <body>If we want to have an environment like an UML editor, usable by non expert end users, the tool should provide macro actions to avoid lots of clicks.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdHIcTg2EeSL_oCrEVX-XQ" name="Req-16">
+        <ownedComment xmi:id="_LdI9oDg2EeSL_oCrEVX-XQ">
+          <body>If we want to have an environment like an UML editor, usable by non expert end users, the tool should provide macro actions to avoid lots of clicks.
+For instance: if MARTE is used, user should only see relevant stereotyped elements and attributes
+For a given methodology the modeling toolkit should expose to users domain specific concepts even if the tool is based on a general purpose modeling tool
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdJksDg2EeSL_oCrEVX-XQ" name="Req-13">
+        <ownedComment xmi:id="_LdLZ4Dg2EeSL_oCrEVX-XQ">
+          <body>Enforcing separation of concerns between configuration state and excution state. &quot;IDDLE&quot; state allows to set component attributes avoiding interaction between component.  
+For example, SCA components can be set in &quot;START&quot; or &quot;STOP&quot; mode. By stopping a component, all incoming calls are queued and you can perform reconfiguration on it.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdLZ4Tg2EeSL_oCrEVX-XQ" name="Req-14">
+        <ownedComment xmi:id="_LdN2IDg2EeSL_oCrEVX-XQ">
+          <body>Enforcing separation of concerns between configuration state and excution state. &quot;IDDLE&quot; state allows to set component attributes avoiding interaction between component.  
+For example, SCA components can be set in &quot;START&quot; or &quot;STOP&quot; mode. By stopping a component, all incoming calls are queued and you can perform reconfiguration on it.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdQSYDg2EeSL_oCrEVX-XQ" name="Req-12">
+        <ownedComment xmi:id="_LdSHkDg2EeSL_oCrEVX-XQ">
+          <body>Enforcing separation of concerns between configuration state and excution state. &quot;IDDLE&quot; state allows to set component attributes avoiding interaction between component.  
+For example, SCA components can be set in &quot;START&quot; or &quot;STOP&quot; mode. By stopping a component, all incoming calls are queued and you can perform reconfiguration on it.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdSuoDg2EeSL_oCrEVX-XQ" name="Req-21">
+        <ownedComment xmi:id="_LdUj0Dg2EeSL_oCrEVX-XQ">
+          <body>Capture functional behavior of subsystems.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdUj0Tg2EeSL_oCrEVX-XQ" name="Req-20">
+        <ownedComment xmi:id="_LdWZADg2EeSL_oCrEVX-XQ">
+          <body>Facilitate efficient and correct integration of subsystems.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ldj0YDg2EeSL_oCrEVX-XQ" name="Req-102"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdqiEDg2EeSL_oCrEVX-XQ" name="Req-100">
+        <ownedComment xmi:id="_LdrwMDg2EeSL_oCrEVX-XQ">
+          <body>Software analysis and verification tools may be available only on workstation platforms.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeIcITg2EeSL_oCrEVX-XQ" name="Req-82"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeLfcDg2EeSL_oCrEVX-XQ" name="Req-80"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeMtkDg2EeSL_oCrEVX-XQ" name="Req-81"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeWekDg2EeSL_oCrEVX-XQ" name="Req-66">
+        <ownedComment xmi:id="_LeXssDg2EeSL_oCrEVX-XQ">
+          <body>In a top down design methodology, selective replacement of high abstract models with more refined models will enable consistency between models and it's implementation, a selection of relevant implementation languages (Verilog, C, VHDL) has to be made</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LedMQDg2EeSL_oCrEVX-XQ" name="Req-72"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeeaYDg2EeSL_oCrEVX-XQ" name="Req-73">
+        <ownedComment xmi:id="_LefogDg2EeSL_oCrEVX-XQ">
+          <body>The toolchain should be extensible in terms of generator. It should provide a way to easily create and execute new code generators or model transformations</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LefogTg2EeSL_oCrEVX-XQ" name="Req-74"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Leg2oDg2EeSL_oCrEVX-XQ" name="Req-75">
+        <ownedComment xmi:id="_LeiEwDg2EeSL_oCrEVX-XQ">
+          <body>Model driven engineering operations can be composed of a set of reusable generators. The OTC should provide a way to easily chain and use those generators in dedicated workflows.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeiEwTg2EeSL_oCrEVX-XQ" name="Req-76">
+        <ownedComment xmi:id="_LejS4Dg2EeSL_oCrEVX-XQ">
+          <body>UML models may contain useful information for code generation, but as well for documentation generation. For instance part of a system specification doc, for instance use cases definition, could be generated from an input UML containing use cases, structural  and behavioural diagrams. This impose to add consistent documentation like model element comments in the model. Gendoc2 can be a potential candidate</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeqnoDg2EeSL_oCrEVX-XQ" name="Req-64">
+        <ownedComment xmi:id="_LerOsDg2EeSL_oCrEVX-XQ">
+          <body>UVM is the emerging standard for verification. In a topdown verification methodology, system requirements can be described by specific tests to be executed on a system level model</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le4DATg2EeSL_oCrEVX-XQ" name="Req-51">
+        <ownedComment xmi:id="_Le5RIDg2EeSL_oCrEVX-XQ">
+          <body>Provide the list of the possible interdependencies between the models wrt. the nature of the relation (timing, power, I/O, etc…) and possible transformation rules between them. For example: an IP-XACT model contains structural description of an IP ; UPF contains enriched information of the IP in tems of power, in relation with the structure of the IP.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le5RITg2EeSL_oCrEVX-XQ" name="Req-52">
+        <ownedComment xmi:id="_Le54MDg2EeSL_oCrEVX-XQ">
+          <body>For instance, a timing property may be expressed in a model as a quantity of time. Another model may contain the same information in a refined form, i.e. the full communication path with detailed components timing information. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcHC4Dg2EeSL_oCrEVX-XQ" name="Req-33">
+        <ownedComment xmi:id="_LcI4EDg2EeSL_oCrEVX-XQ">
+          <body>To extract Power-related Parameters for power modeling</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcsRsTg2EeSL_oCrEVX-XQ" name="Req-30"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc2pwDg2EeSL_oCrEVX-XQ" name="Req-31"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdFTQDg2EeSL_oCrEVX-XQ" name="Req-15">
+        <ownedComment xmi:id="_LdHIcDg2EeSL_oCrEVX-XQ">
+          <body>&quot;Functional models&quot; include applications and/or power and thermal management from behavioral stage and onwards. SystemC is a IEEE standard.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld3WYDg2EeSL_oCrEVX-XQ" name="Req-93"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld7AwDg2EeSL_oCrEVX-XQ" name="Req-91">
+        <ownedComment xmi:id="_Ld8O4Dg2EeSL_oCrEVX-XQ">
+          <body>To be standard compliant</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld818Dg2EeSL_oCrEVX-XQ" name="Req-90"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ld_5QTg2EeSL_oCrEVX-XQ" name="Req-88"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeBucDg2EeSL_oCrEVX-XQ" name="Req-89"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeDjoDg2EeSL_oCrEVX-XQ" name="Req-79">
+        <ownedComment xmi:id="_LeExwDg2EeSL_oCrEVX-XQ">
+          <body>Definition of rules is a prerequisite to code generation.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeFY0Dg2EeSL_oCrEVX-XQ" name="Req-78"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeGm8Dg2EeSL_oCrEVX-XQ" name="Req-77">
+        <ownedComment xmi:id="_LeIcIDg2EeSL_oCrEVX-XQ">
+          <body>By relying on the documentation and information related to the tools (i.e. the functionnalities they cover and for each functionnality the corresponding input and output files), we can leverage on IP-XACT components and their associated generators to script parts of the flow.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeJqQDg2EeSL_oCrEVX-XQ" name="Req-83">
+        <ownedComment xmi:id="_LeK4YDg2EeSL_oCrEVX-XQ">
+          <body>This is a key aspect to preserve the PIM dimension, in the sense that Container will handle interactions in case software components are not co-localized.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeOiwDg2EeSL_oCrEVX-XQ" name="Req-86">
+        <ownedComment xmi:id="_LePw4Dg2EeSL_oCrEVX-XQ">
+          <body>or from a subpart of a Simulink executable model for example to accelerate some modules and not necessarily the whole model</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LePw4Tg2EeSL_oCrEVX-XQ" name="Req-87">
+        <ownedComment xmi:id="_LeQ_ADg2EeSL_oCrEVX-XQ">
+          <body>PSM modelling is the basis for automatic generation of Container software.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeRmEDg2EeSL_oCrEVX-XQ" name="Req-84">
+        <ownedComment xmi:id="_LeS0MDg2EeSL_oCrEVX-XQ">
+          <body>Standard-compliant techniques shall be preferred.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeS0MTg2EeSL_oCrEVX-XQ" name="Req-85">
+        <ownedComment xmi:id="_LeUpYDg2EeSL_oCrEVX-XQ">
+          <body>Generation of empty functional code from the CIM structural model is one poissibility of the OTC.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Leb-IDg2EeSL_oCrEVX-XQ" name="Req-71"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LezKgDg2EeSL_oCrEVX-XQ" name="Req-48">
+        <ownedComment xmi:id="_LezxkDg2EeSL_oCrEVX-XQ">
+          <body>Enabling components to dynamically modify their connections would break the principle in SDR standards (SCA noticeably) that only Core Framework can handle connections among components.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ldb4kDg2EeSL_oCrEVX-XQ" name="Req-106"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ldfi8Dg2EeSL_oCrEVX-XQ" name="Req-104"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdhYIDg2EeSL_oCrEVX-XQ" name="Req-103">
+        <ownedComment xmi:id="_LdjNUDg2EeSL_oCrEVX-XQ">
+          <body>The purpose of this requrement is for example for parallelisation</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdsXQDg2EeSL_oCrEVX-XQ" name="Req-98">
+        <ownedComment xmi:id="_LduMcDg2EeSL_oCrEVX-XQ">
+          <body>for power estimation</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcA8QDg2EeSL_oCrEVX-XQ" name="Req-35">
+        <ownedComment xmi:id="_LcFNsDg2EeSL_oCrEVX-XQ">
+          <body>How the clock is distributed from quartz or PLL down to Ips => used for power estimation</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcF0wDg2EeSL_oCrEVX-XQ" name="Req-36"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcI4ETg2EeSL_oCrEVX-XQ" name="Req-34">
+        <ownedComment xmi:id="_LcKtQDg2EeSL_oCrEVX-XQ">
+          <body>How the power is distributed from battery or wall plug down to IP => used for power estimation</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcKtQTg2EeSL_oCrEVX-XQ" name="Req-39">
+        <ownedComment xmi:id="_LcMicDg2EeSL_oCrEVX-XQ">
+          <body>e.g battery life time, critical temperature...</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcMicTg2EeSL_oCrEVX-XQ" name="Req-37">
+        <ownedComment xmi:id="_LcOXoDg2EeSL_oCrEVX-XQ">
+          <body>e.g Voltage, frequency</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcOXoTg2EeSL_oCrEVX-XQ" name="Req-38">
+        <ownedComment xmi:id="_LcQM0Dg2EeSL_oCrEVX-XQ">
+          <body>e.g picture size</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lce2UTg2EeSL_oCrEVX-XQ" name="Req-26"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcgrgDg2EeSL_oCrEVX-XQ" name="Req-27"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcigsDg2EeSL_oCrEVX-XQ" name="Req-28"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LckV4Dg2EeSL_oCrEVX-XQ" name="Req-29"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcxxQTg2EeSL_oCrEVX-XQ" name="Req-32">
+        <ownedComment xmi:id="_LczmcDg2EeSL_oCrEVX-XQ">
+          <body>To reenforce modularity</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc6UITg2EeSL_oCrEVX-XQ" name="Req-9">
+        <ownedComment xmi:id="_Lc8JUDg2EeSL_oCrEVX-XQ">
+          <body>This allows to express the tools that the model types can be created/edited/transformed with.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lc-lkTg2EeSL_oCrEVX-XQ" name="Req-19">
+        <ownedComment xmi:id="_LdAawDg2EeSL_oCrEVX-XQ">
+          <body>The performance requirements should (preferably) be specified in the XML format used by our proprietary tools (SDF3 and CompSOC). The actual implementation of the application running on the platform should be provided in the C programming language following additional programming constraints such that the program adheres to the dataflow paradigm that is used in our analysis and mapping tools.
+
+The performance requirements that need to be specified are:
+- WCET of each component in the application
+- Worst-case memory requirement of each component in the application
+- Latency and bandwidth requirement for each connection between components in the application
+- Throughput and latency requirements of the application
+- Energy budget of the application</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdXAEDg2EeSL_oCrEVX-XQ" name="Req-108"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LduMcTg2EeSL_oCrEVX-XQ" name="Req-97">
+        <ownedComment xmi:id="_LdwBoDg2EeSL_oCrEVX-XQ">
+          <body>e.g regulator efficiency</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdwosDg2EeSL_oCrEVX-XQ" name="Req-96">
+        <ownedComment xmi:id="_Ldyd4Dg2EeSL_oCrEVX-XQ">
+          <body>e.g battery life time</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ldyd4Tg2EeSL_oCrEVX-XQ" name="Req-95">
+        <ownedComment xmi:id="_Ld06IDg2EeSL_oCrEVX-XQ">
+          <body>To be standard compliant</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeXssTg2EeSL_oCrEVX-XQ" name="Req-69">
+        <ownedComment xmi:id="_LeY60Dg2EeSL_oCrEVX-XQ">
+          <body>Power management</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeY60Tg2EeSL_oCrEVX-XQ" name="Req-68">
+        <ownedComment xmi:id="_LeaI8Dg2EeSL_oCrEVX-XQ">
+          <body>Fundational UML provides a bidirectionnal mapping between a subset of UML activites and ALF. Should be good to be able to generate a graphical view from a textual scenario</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LeawADg2EeSL_oCrEVX-XQ" name="Req-70">
+        <ownedComment xmi:id="_LebXEDg2EeSL_oCrEVX-XQ">
+          <body>Thermal management/throttling</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lej58Dg2EeSL_oCrEVX-XQ" name="Req-59">
+        <ownedComment xmi:id="_LelIEDg2EeSL_oCrEVX-XQ">
+          <body>This is important because executable models are often specific to areas of expertise.
+E.g. in radio sets area Simulink is well suited to PHY layer, while OMNET fits better to higher level protocols modelling.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LemWMDg2EeSL_oCrEVX-XQ" name="Req-57">
+        <ownedComment xmi:id="_LenkUDg2EeSL_oCrEVX-XQ">
+          <body>Enables to accurately position OSMK within CIM/PIM/PSM approaches.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LetD4Tg2EeSL_oCrEVX-XQ" name="Req-62"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LevgITg2EeSL_oCrEVX-XQ" name="Req-60"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LewuQDg2EeSL_oCrEVX-XQ" name="Req-61"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LezxkTg2EeSL_oCrEVX-XQ" name="Req-45"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le204Tg2EeSL_oCrEVX-XQ" name="Req-46">
+        <ownedComment xmi:id="_Le4DADg2EeSL_oCrEVX-XQ">
+          <body>Thess APIs define the set of functionnalities offered by an HW block and useable for SW or System Level scenarios (also known as Low Level Driver or Hardware Abstraction Layer). For example, API used for creating and activating tasks on subsystem and control their operation.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Le6fQDg2EeSL_oCrEVX-XQ" name="Req-53">
+        <ownedComment xmi:id="_Le7GUDg2EeSL_oCrEVX-XQ">
+          <body>To support interfacing with widespread requirements management tools (e.g. Doors, Reqtify, etc.)</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LcSCADg2EeSL_oCrEVX-XQ" name="Req-42">
+        <ownedComment xmi:id="_LcTQIDg2EeSL_oCrEVX-XQ">
+          <body>In low level software,  bit optimization can require to now very early in the flow the number of bits required to encode a given variable (can be any value, from 1 to at least 64..)</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lex8YDg2EeSL_oCrEVX-XQ" name="Req-49">
+        <ownedComment xmi:id="_LeyjcDg2EeSL_oCrEVX-XQ">
+          <body>One essential aspect in SDR is that the standard SDR specifications are setting the boundary between the radio application (=&quot;waveform application&quot;) and the SDR platform.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdlpkDg2EeSL_oCrEVX-XQ" name="Req-99">
+        <ownedComment xmi:id="_LdnewDg2EeSL_oCrEVX-XQ">
+          <body>As IP-XACT is a standard and PSM representation is flow dependent. The goal of this requirement is to identify the parts of the IP-XACT standard that are required to model the PSM.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LdoF0Dg2EeSL_oCrEVX-XQ" name="Req-101">
+        <ownedComment xmi:id="_Ldp7ADg2EeSL_oCrEVX-XQ">
+          <body>Potential examples are the MCA MCapi protocols or the POSIX mmap or sockets interfaces.</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nXOdAD9UEeSg1JKAcrGqqg" clientDependency="_GXNloNbnEeSyeMP5nMIeKA" name="Traceability">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GJpDsNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-7" supplier="_LcuG4Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GQ1Q0NbnEeSyeMP5nMIeKA">
+          <body>The requirement 7 is satisfied by OSMK because it includes UML mechanisms for connecting components through their ports (thereby specifying the potential interactions), and UML mechanisms for communications between components. Package Req_7_example (from CEA_Examples) imports elements from model WaitNotifyExample: System and NotifyProtocol. System includes an assembly of components, communing with signals through their ports. It adresses the &quot;message-oriented&quot; communication paradigm of requirement 7. The NotifyProtocol class is used to type ports of components assembled within System. It declarares a Reception for a Signal called Notify, and thereby enables exchange of Notify signals between the two assembled components.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_5DoJsESsEeS1A8a25jnZOw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GQ2e8NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-11" supplier="_LdN2ITg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GQ6wYdbnEeSyeMP5nMIeKA">
+          <body>The requirement 11 is satisfied by OSMK because UML state machines can be used to specify the kind of fundamental state machines required by Req-11. Package Req_11_example includes the definition of such a state machine, with the definition of an IDLE and a RUNNING state. The example is only partial, since it does not specify the triggers and reactions associated with each of the transition. An actual statemachine would have to specify those elements, and encode the rules for state changes between IDLE and RUNNING. </body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_AruW4EWGEeSowfQPSaIaYg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GQ7-gNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-19" supplier="_Lc-lkTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GRA3ANbnEeSyeMP5nMIeKA">
+          <body>The requirement 19 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. Constraints are specified using NFP_Constraints. Examples are given through the &quot;A NFPs&quot; class.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CEA/CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GSrq8NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-36" supplier="_LcF0wDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GSxxkdbnEeSyeMP5nMIeKA">
+          <body>The requirement 36 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of latency constraint (which is a power related requirement) is given with class Scenario NFP Requirement.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTEsgNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-37" supplier="_LcMicTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GTKzIdbnEeSyeMP5nMIeKA">
+          <body>The requirement 37 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTLaMNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-38" supplier="_LcOXoTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GTSH4dbnEeSyeMP5nMIeKA">
+          <body>The requirement 38 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTSu8NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-39" supplier="_LcKtQTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GTaDsdbnEeSyeMP5nMIeKA">
+          <body>The requirement 39 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTbR0NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-43" supplier="_LcQM0Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GTimkNbnEeSyeMP5nMIeKA">
+          <body>The requirement 43 is satisfied by the OSMK because it includes UML and OCL. The example reported in package Req_43_example (from model CEA_Examples) illustrates the usage of OCL in the frame of UML constraints, to specify the allowed range of values on a parameter of an Operation. In addition, the example illustrates the definition and usage of reusable OCL queries, specified as &quot;bodyConditions&quot; of operations of a class.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_tI_GYEJsEeSQQvkAoKcNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTkbwNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-50" supplier="_Le8UcDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GTrJcNbnEeSyeMP5nMIeKA">
+          <body>The requirement 50 is satisfied by OSMK because fUML/PSCS (i.e., executable subsets of UML) are part of the OSMK. Package Req_50_example (from model CEA_Examples) highlights executable Activities imported from model WaitNotifyExample. These activities (from model WaitNotifyExample) provide examples of high level synchronization in executable PSCS models, using signals. These activities are executable, and attach to structural elements of the model (in UML terms, they are &quot;classifier behaviors&quot;)</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#__64pkEP1EeS1A8a25jnZOw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GTva4NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-67" supplier="_LeUpYTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GT2IkNbnEeSyeMP5nMIeKA">
+          <body>The requirement 67 is satisfied by OSMK because it encompasses UML and Alf. Package Req_67_example (from model CEA_Examples) imports elements from model TestSuite, which is an excerpt of the normative PSCS test suite. This test suite contains a number of executable models. These models actually describe both systems under tests, and test behaviors. These test behaviors are specified either graphically using sequence diagrams, or textually using the Alf notation. It thereby demonstrates how the OSMK satisfy OpenES Req 67, since OSMK encompasses both UML and Alf. Activity &quot;Tester Classifier Behavior&quot; (imported by the Req_67_example package), specified within an activity diagram, describes the behavior of a so-called Tester object. Mouve over the activity and follow the hyperlink to see the corresponding diagram. Class &quot;TestCaseAssembly&quot; (also imported the Req_67_example model) illustrates the usage of Alf for the specification of the test() method. It relies on the usage of the AssertionLibrary (imported by the TestSuite, and available in the OpenES archive), which includes the definition of usual Assertion procedures. These procedures are themselves specified in Alf, and executable according the semantics of fUML.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_ss5NwEWBEeSrQ6Cqd6WSQA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GT2voNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-69" supplier="_LeXssTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GT82QdbnEeSyeMP5nMIeKA">
+          <body>The requirement 69 is partially satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. The complete details of the power policy are not directly captured by these classes, but with references to external configuration files (e.g., leak_ref_table) which are specific to Docea tools.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GT-EYNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-70" supplier="_LeawADg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUELANbnEeSyeMP5nMIeKA">
+          <body>The requirement 70 is satisfied by the definition of OSMK::Thermal sub-profile. This profile captures information related to thermal analysis, and has been designed according to information required by Docea thermal analysis tools. A usage example is given in package ThermalInputs of the DOCEA example model.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_ORoi0NLnEeSxfJeW9LXdZg"/>
+        <client xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_GbgbcNLkEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUFZINbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-96" supplier="_LdwosDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GULfwdbnEeSyeMP5nMIeKA">
+          <body>The requirement 96 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of power constraint is given with class Scenario NFP Requirement. In the example,  the constraint refers to a specific usage scenario. This is done by having a lifeline as the constrained element of the underlying UML constraint. The same mechanism can be used to constrain more generally a system (or sub-system, or specific IP) by constraining the appropriate model element.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUMG0NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-97" supplier="_LduMcTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUS0gNbnEeSyeMP5nMIeKA">
+          <body>The requirement 97 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of power constraint is given with class Scenario NFP Requirement. In the example,  the constraint refers to a specific usage scenario. This is done by having a lifeline as the constrained element of the underlying UML constraint. The same mechanism can be used to constrain more generally a system (or sub-system, or specific IP) by constraining the appropriate model element.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUXF8NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-5" supplier="_Lc0NgDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUdzodbnEeSyeMP5nMIeKA">
+          <body>The requirement 5 is satisfied by the OSMK::Annotation subprofile beacause it enables to annotate any kind of model element with key / value pairs, including information related to categories. </body>
+        </ownedComment>
+        <client xmi:type="uml:Profile" href="../../OSMK/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+        <client xmi:type="uml:Model" href="../common/DefaultOSMKCategories.uml#_0lnGgD8rEeSQQvkAoKcNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUeasNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-56" supplier="_LenkUTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUlIYNbnEeSyeMP5nMIeKA">
+          <body> The requirement 56 is satisfied by OSMK because if includes Alf. Package Req_56_example (from model CEA_Examples) imports elements from the TestSuite model. In particular, the imported Class A has a classifier behavior. This classifier behavior is expressed textually in Alf, and specifies that A is reactive to occurences of signal S. Signal received are used to assign some values to local property A::p.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_JeKxAEWTEeSV4M5t5MtZFw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUlvcNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-71" supplier="_Leb-IDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUr2EdbnEeSyeMP5nMIeKA">
+          <body>The requirement 71 is satisfied by the definition of OSMK::Thermal sub-profile. This profile captures information related to thermal analysis, and has been designed according to information required by Docea thermal analysis tools. A usage example is given in package ThermalInputs of the DOCEA example model.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/DOCEA_inputs.uml#_ORoi0NLnEeSxfJeW9LXdZg"/>
+        <client xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_GbgbcNLkEeSxfJeW9LXdZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUsdINbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-20" supplier="_LdUj0Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GUzK0dbnEeSyeMP5nMIeKA">
+          <body>The requirement 20 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The specific context for the evaluation of those constraints (as requested by the requirement), are identified using the &quot;mode&quot; attribute NFP_Constraint, which refers to a particular operational mode specified as a State in a StateMachine. The constrained element is identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CEA/CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GUzx4NbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-24" supplier="_LcbL8Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GU54gdbnEeSyeMP5nMIeKA">
+          <body>The requirement 24 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The IDLE mode is identified using the MARTE::Mode stereotype, and apply it on a State of a StateMachine (in the provided example, the state machine belongs to class A, from package Req_11_example in the model provided by CEA). The timing constraints are specified using NFP_Constraints. The property on which the read / write acces time constraint apply are identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CEA/CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GU6fkNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-25" supplier="_LcdBITg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GVBNQdbnEeSyeMP5nMIeKA">
+          <body>The requirement 25 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The RUNNING mode is identified using the MARTE::Mode stereotype, and apply it on a State of a StateMachine (in the provided example, the state machine belongs to class A, from package Req_11_example in the model provided by CEA). The timing constraints are specified using NFP_Constraints. The Operation on which the WCET constraint applies is identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CEA/CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GVB0UNbnEeSyeMP5nMIeKA" name="CEArequirement_traceability_model_Req-40" supplier="_LcVsYDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GVJJEdbnEeSyeMP5nMIeKA">
+          <body>The requirement 40 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). The specific use case on which the constraints apply is identified though a specific scenario, which is modeled using a sequence diagram. If a constraint applies on the overall scenario,  then the scenario shall be the constrained element of the underlying UML constraint. If the constraint only concerns a sub-system within the scenario, then the constrained element of the underlying constraint shall be a LifeLine of the context scenario (where this life line represents the specific sub-system). An example is given with class Scenario NFP Requirement.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GVmcENbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-1" supplier="_LcqcgTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GVsisdbnEeSyeMP5nMIeKA">
+          <body>The requirement 1 is satisfied by CISC Model where the discribed eCar system is composed of analog digital parts. 
+The analog parts have been specifically identified thanks OSMK annotation mechanism with the DigitalOrAnalog key.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_UZAVAN9YEeOEYqYOSJVEtg"/>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_ioUIwDpwEeSJGtdTd5OXCA"/>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_VG1gANqlEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GVtw0NbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-6" supplier="_Lcv8ETg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GVz3cdbnEeSyeMP5nMIeKA">
+          <body>The requirement 6 is satisfied by CISC eCar Model that provides a full system view of an eCar where composed of parts of different nature.
+Some of them are analog or digital, including software of pure hardware. But at this level of abstraction no assumption is made yet on how the elements will be finally implemented. </body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../CISC/model_sim_v7.uml#_ulsd0NqWEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWZGQNbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-27" supplier="_LcgrgDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GWdXsdbnEeSyeMP5nMIeKA">
+          <body>The requirement 27 is satisfied by sensor instances in CISC model, with frequency information specified using MARTE&#xD;
+HWSensor stereotype.</body>
+        </ownedComment>
+        <client xmi:type="uml:Property" href="../CISC/cisc_casestudy_v8.uml#_uPeIALHjEeSngYAOPsoqbA"/>
+        <client xmi:type="uml:Property" href="../CISC/cisc_casestudy_v8.uml#_t3tvULHjEeSngYAOPsoqbA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWd-wNbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-28" supplier="_LcigsDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GWhpIdbnEeSyeMP5nMIeKA">
+          <body>The requirement 28 is satisfied by the information flow from Battery to Battery Management Unit to which a timed constraint&#xD;
+has been applied.</body>
+        </ownedComment>
+        <client xmi:type="uml:InformationFlow" href="../CISC/cisc_casestudy_v8.uml#_bPb28KeuEeSj-ZeDqLNkfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWiQMNbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-29" supplier="_LckV4Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GWmhoNbnEeSyeMP5nMIeKA">
+          <body>The requirement 29 is satisfied by the information flow from Battery to Battery Management Unit to which a timed constraint&#xD;
+has been applied.</body>
+        </ownedComment>
+        <client xmi:type="uml:InformationFlow" href="../CISC/cisc_casestudy_v8.uml#_bPb28KeuEeSj-ZeDqLNkfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWo94NbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-55" supplier="_LepZgDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GWtPUdbnEeSyeMP5nMIeKA">
+          <body>The requirement 55 is satisfied by CICS eCar model since the structural description of its system is made with UML and MARTE profile.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../CISC/model_sim_v7.uml#_ulsd0NqWEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWt2YNbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-61" supplier="_LewuQDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GWyH0dbnEeSyeMP5nMIeKA">
+          <body>The requirement 61 is satisfied by CISC case study since it contains model elements with MARTE real-time constraints. For&#xD;
+instance the SafeState state machine is having the TimedProcessing stereotype applied.</body>
+        </ownedComment>
+        <client xmi:type="uml:StateMachine" href="../CISC/cisc_casestudy_v8.uml#_tt2jsK04EeSc3ezmxC0eww"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GWyu4NbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-62" supplier="_LetD4Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GW2ZQdbnEeSyeMP5nMIeKA">
+          <body>The requirement 62 is satisfied by the sensor instances in CISC model, with frequency information specified using MARTE&#xD;
+HWSensor stereotype.</body>
+        </ownedComment>
+        <client xmi:type="uml:Property" href="../CISC/cisc_casestudy_v8.uml#_t3tvULHjEeSngYAOPsoqbA"/>
+        <client xmi:type="uml:Property" href="../CISC/cisc_casestudy_v8.uml#_uPeIALHjEeSngYAOPsoqbA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GW3AUNbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-63" supplier="_LeuSADg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GW7RwNbnEeSyeMP5nMIeKA">
+          <body>The OSMK related aspect of requirement 63 is satified by CISC eCar model thanks OSMK annotation mechanism. A specific annotation key, called &quot;SimulationTool&quot; allows to identify in the model which elements should be simulated with a given tool like Simulink.
+It will be up to OTC WP2 task to provide the real cosimulation infrastructure. </body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_ioUIwDpwEeSJGtdTd5OXCA"/>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_UZAVAN9YEeOEYqYOSJVEtg"/>
+        <client xmi:type="uml:Class" href="../CISC/model_sim_v7.uml#_VG1gANqlEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GW9G8NbnEeSyeMP5nMIeKA" name="CISCrequirement_traceability_model_Req-105" supplier="_LddtwDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXBYYdbnEeSyeMP5nMIeKA">
+          <body>The requirement 105 is satisfied by CISC eCar model and more particularly by the Interaction called BatteryUnderLoad which describes a given use case of the eCar System. 
+Since it is expressed in UML, the model will be serialized in XML and will be parsable by tools. </body>
+        </ownedComment>
+        <client xmi:type="uml:Interaction" href="../CISC/model_sim_v7.uml#_kFGkMNqnEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXD0oNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-26" supplier="_Lce2UTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXIGEdbnEeSyeMP5nMIeKA">
+          <body>The requirement 26 is satisfied by the Decoding Scenario in the OpenES common model. This scenario is containing timing constraints on operation execution durations.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interaction" href="../common/Opens_T12_T13_examples.uml#_QxFhcMFvEeOMpogq5s-jlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXJUMNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-32" supplier="_LcxxQTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXM-kNbnEeSyeMP5nMIeKA">
+          <body>The requirement 32 is satisfied in this example model where all the NFP related information has been put in a separate package, linked to the constrained elements thanks to MARTE Assign mechanism.
+</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../common/Opens_T12_T13_examples.uml#_LQV2QMRPEeOmwre7FP4mtA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXNloNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-41" supplier="_LcT3MDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXQo8dbnEeSyeMP5nMIeKA">
+          <body>The requirement 41 is satisfied by the Traceability package of the OpenESRequirements model since it provides example of requirement traceability links applied on any relevant model element.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../ST/ST_requirement_traceabilitiy.uml#_uC0mkD85EeSMVO0Wc1d0pQ"/>
+        <client xmi:type="uml:Package" href="#_nXOdAD9UEeSg1JKAcrGqqg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXR3ENbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-44" supplier="_Le0_sDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXU6YdbnEeSyeMP5nMIeKA">
+          <body>The requirement 44 is satisfied by the OpenES common model since it provides an example of hardware architecture description compatible with IPXACT.
+By applying ST ESL profile with IPXACT specific stereotypes, ports and classes can be annotated to be identified as IPXACT elements and allow automated import/export processes. </body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../common/Opens_T12_T13_examples.uml#_vYupYLZcEeOPV4N4w47sBw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXnOQNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-46" supplier="_Le204Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXqRkdbnEeSyeMP5nMIeKA">
+          <body>The requirement 46 is satisfied by the SimplifiedGBSAPI UML model. This model provides a simplified description of Multimedia IP Low Level Driver. This programming API, which has to be used by OS specific drivers is providing a SW level.
+description of the services offered by the IP.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../ST/GBS/SimplifiedGBSAPI.uml#_L48kQNLTEeSmqtnQ62uNjw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXq4oNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-47" supplier="_Le2N0Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXvKENbnEeSyeMP5nMIeKA">
+          <body>The requirement 47 is by the OSMK Annotation sub profile which provides a generic annotation mechanism which can be used to tag model elements as applicative, hardware or software model elements.</body>
+        </ownedComment>
+        <client xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXvxINbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-54" client="_LMQB8Tg2EeSL_oCrEVX-XQ" supplier="_Le7GUTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GXy0cdbnEeSyeMP5nMIeKA">
+          <body>The requirement 54 is satisfied OSMK-Requirement package whose owned SysML requirements are displayed in a table called &quot;WP1 Requirements&quot; in Papyrus.
+Moreover Papyrus proposes a generic mechanism to create tables to display any model elements, including MARTE allocation.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GXzbgNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-58" supplier="_LelIETg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GX3F4dbnEeSyeMP5nMIeKA">
+          <body>The requirement 58 is satisfied by the OPENES common model which provides a HW structural model described in UML, which is by nature compliant with OMG XMI standard.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../common/Opens_T12_T13_examples.uml#_vYupYLZcEeOPV4N4w47sBw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GX4UANbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-94" supplier="_Ld1hMDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GX7-YNbnEeSyeMP5nMIeKA">
+          <body>The requirement 94 is satisfied by OpenES common model which provides an example of IPXACT compatible description of HW structure.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../common/Opens_T12_T13_examples.uml#_vYupYLZcEeOPV4N4w47sBw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GX8lcNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-107" supplier="_LdZcUDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYAP0NbnEeSyeMP5nMIeKA">
+          <body>Req_43_example from CEA is also satifying the requirement 107 by providing a mechanism to define constraints and properties that should be validated in the model.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../CEA/CEA_Examples.uml#_tI_GYEJsEeSQQvkAoKcNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYAP0dbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-10" supplier="_Ld-EEDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYEhQNbnEeSyeMP5nMIeKA">
+          <body>The requirement 10 is satisfied by the OSMK Annotation subprofile, since it provides a generic mechanism to pre-define a list of annotation keys that can be associated to any model element.</body>
+        </ownedComment>
+        <client xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYEhQdbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-18" client="_7UYicDgWEeSW7vxfDQgMFw" supplier="_LdC3ATg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYIysNbnEeSyeMP5nMIeKA">
+          <body> The requirement 18 is satisfied by the OpenESRequirements model which provides an example of a requirement data base described in SysML.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYIysdbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-65" supplier="_Ler1wDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYNEINbnEeSyeMP5nMIeKA">
+          <body> Requirement 65 is satisfied by the CISC eCar model, whose structural part contains both digital and analog blocks.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../CISC/model_sim_v7.uml#_ulsd0NqWEeOQjtjMaUBE_g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYNEIdbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-92" supplier="_Ld5LkDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYQugdbnEeSyeMP5nMIeKA">
+          <body> The requirement 92 is satisfied by the OpenES common model which contains an ipxact compatible description of the HW structure. Consequently, it can describe hardware interfaces such as clocks, interrupts, bus interfaces etc.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../common/Opens_T12_T13_examples.uml#_vYupYLZcEeOPV4N4w47sBw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYRVkNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-22" supplier="_LcXhkDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYU_8dbnEeSyeMP5nMIeKA">
+          <body>The requirement 22 is satisfied by the OpenES common model which contains a hierarchical description of ARM Cortex A9 quadri core processor.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_khpVoLZdEeOPV4N4w47sBw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYuBgNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-23" supplier="_LcZWwTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYwdwdbnEeSyeMP5nMIeKA">
+          <body>Requirement 23 is satisfied by the GBS model thanks to OSMK annotation profile. We used this generic annotation mechanismb to associate to the GBS class required information such as hosting operating system and processor.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../ST/GBS/GBS_model.uml#__CzLQENWEeSbkcOAs8vXiw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GYxE0NbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-42" supplier="_LcSCADg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GYzhEdbnEeSyeMP5nMIeKA">
+          <body>The SimplifiedGBS API model is satisfying requirement 42 thanks to ST API profile. This profile allows to annotate typed elements like struct member (for instance Rectangle_t::OriginX) with the Dynamic tagged value which specifies maximum number of bits needed to encode the values held by this variable.</body>
+        </ownedComment>
+        <client xmi:type="uml:Property" href="../ST/GBS/SimplifiedGBSAPI.uml#_i_5LgM0DEeGlp-UqfsJdow"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZSCMNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-45" supplier="_LezxkTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZVFgdbnEeSyeMP5nMIeKA">
+          <body>The synchro_dma_cpu model is partially satisfying the requirement 45. It contains an fUML executable description showing synchronizations between a CPU and DMA, including HW/HW synchronizations.</body>
+        </ownedComment>
+        <client xmi:type="uml:Model" href="../ST/synchro_dma_cpu.uml#_0kH2INQqEeOTaoXDkO9ZOA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZVskNbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-45" supplier="_LezxkTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZYv4NbnEeSyeMP5nMIeKA">
+          <body>The interactions in ST GBS model are showing interactions between the the subsystem firmware and internal hardware blocks. This description of SW/HW synchronizations is partially satisfying the requirement 45.</body>
+        </ownedComment>
+        <client xmi:type="uml:Package" href="../ST/GBS/GBS_model.uml#_1AAUYEPJEeSbkcOAs8vXiw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZYv4dbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-101" supplier="_LdoF0Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZbzMNbnEeSyeMP5nMIeKA">
+          <body>Requirement 101 is satisfied by the SimplifiedGBSAPI which provides an abstraction of low level implementation aspects.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../ST/GBS/SimplifiedGBSAPI.uml#_L48kQNLTEeSmqtnQ62uNjw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZbzMdbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-21" supplier="_LdSuoDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZe2gNbnEeSyeMP5nMIeKA">
+          <body>The interaction &quot;SetRectangleAndRotation&quot; is satisfying the requirement 21 since it provide an example of the a subsystem use case, defined a sequence diagram showing a sequence API function calls.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interaction" href="../ST/GBS/SimplifiedGBSAPI.uml#_YFw5wNRwEeS68ZmrznEdfA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZe2gdbnEeSyeMP5nMIeKA" name="STrequirement_traceability_model_Req-52" supplier="_Le5RITg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZh50dbnEeSyeMP5nMIeKA">
+          <body> The requirement 52 is satisfied by the &quot;Refine&quot; abstraction in OpenES example model. This &quot;Refine&quot; relationship is linking two timing constraints coming from two different interactions, describing the same scenario at two different refinement levels.</body>
+        </ownedComment>
+        <client xmi:type="uml:Abstraction" href="../common/Opens_T12_T13_examples.uml#_hIEOoNSaEeS68ZmrznEdfA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZzmoNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-2" supplier="_LconUDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZ3RAdbnEeSyeMP5nMIeKA">
+          <body>The requirement 2 is satisfied by TCS case studie because the WF application (PHY layer only) is decomposed into systems and subsystems. There,  the particularity is that System is also a function. </body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZ34ENbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-3" supplier="_LcmLEDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZ6UUdbnEeSyeMP5nMIeKA">
+          <body>The requirement 3 is satisfied by TCS case study because the &quot;component&quot; PHY is described using the UML component diagram and respected the CDB method.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZ67YNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-4" supplier="_Lc4e8Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GZ9-sNbnEeSyeMP5nMIeKA">
+          <body>The requirement 4 is satisfied by TCS case study because hierchical dependencies between component is respected with Capella and UML tools.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GZ9-sdbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-5" supplier="_Lc0NgDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaBCAdbnEeSyeMP5nMIeKA">
+          <body>The requirement 5 is satisfied by TCS case study because the application model is decomposed into functions (represented by class diagram nad Capella Tool).  There is no HW consideration.</body>
+        </ownedComment>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaBpENbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-6" supplier="_Lcv8ETg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaEFUdbnEeSyeMP5nMIeKA">
+          <body>The requirement 6 is satisfied by TCS case study because the MDA approach has been followed in Capella and UML
+</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaEsYNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-7" supplier="_LcuG4Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaHIodbnEeSyeMP5nMIeKA">
+          <body>The requirement 7 is satisfied by TCS case study because Capella supports this feature.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaHvsNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-9" supplier="_Lc6UITg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaKL8dbnEeSyeMP5nMIeKA">
+          <body>The requirement 9 is satisfied by TCS case study because Capella is bale to express model types to be crated/edited/transformed</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaKzANbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-11" supplier="_LdN2ITg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaNPQdbnEeSyeMP5nMIeKA">
+          <body>The requirement 11 is satisfied by TCS case study because in Capella a viewpoint is able to add status on the component</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaN2UNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-18" supplier="_LdC3ATg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaQSkdbnEeSyeMP5nMIeKA">
+          <body>The requirement 18 is satisfied by ... because ...</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaQ5oNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-19" supplier="_Lc-lkTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaT88NbnEeSyeMP5nMIeKA">
+          <body>The requirement 19 is satisfied by TCS case study because Capella is able to add viewpoints based on the MARTE profile and it is extended to UML.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaT88dbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-26" supplier="_Lce2UTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaXAQNbnEeSyeMP5nMIeKA">
+          <body>The requirement 26 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaXAQdbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-27" supplier="_LcgrgDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaaDkNbnEeSyeMP5nMIeKA">
+          <body>The requirement 27 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaaDkdbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-28" supplier="_LcigsDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GadG4dbnEeSyeMP5nMIeKA">
+          <body>The requirement 28 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GadG4tbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-29" supplier="_LckV4Dg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GagKMdbnEeSyeMP5nMIeKA">
+          <body>The requirement 29 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GahYUNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-49" supplier="_Lex8YDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GakboNbnEeSyeMP5nMIeKA">
+          <body>The requirement 49 is satisfied by TCS case study because it is defined in the capella tool and is in progress to be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GalCsNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-61" supplier="_LewuQDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GaoGANbnEeSyeMP5nMIeKA">
+          <body>The requirement 61 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaoGAdbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-62" supplier="_LetD4Tg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GarJUdbnEeSyeMP5nMIeKA">
+          <body>The requirement 62 is satisfied by TCS case study because it is defined on the structural diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GarJUtbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-67" supplier="_LeUpYTg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_GauModbnEeSyeMP5nMIeKA">
+          <body>The requirement 67 is satisfied by TCS case study because it is the aim of the modeler Capella and UML</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+        <client xmi:type="uml:Class" href="../TCS/SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GavawNbnEeSyeMP5nMIeKA" name="TCSrequirement_traceability_model_Req-8" supplier="_Lc8wYDg2EeSL_oCrEVX-XQ">
+        <ownedComment xmi:id="_Gax3AdbnEeSyeMP5nMIeKA">
+          <body>The requirement 8 is satisified by TCS case study because the interactions in Capella can be specified in flow or message oriented. It could be easily exported to an UML tool.</body>
+        </ownedComment>
+        <client xmi:type="uml:Interface" href="../TCS/SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_caajwEohEeSHgI5H7gAeKA" name="Annotations">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_jkBDsEohEeSHgI5H7gAeKA" name="ReqAnnotations">
+        <ownedLiteral xmi:id="_n8OaEEohEeSHgI5H7gAeKA" name="RequirementScope"/>
+        <ownedLiteral xmi:id="_ocMTkEohEeSHgI5H7gAeKA" name="NotCoveredReason"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_7U78EDgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7VA0kDgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_TZ_nULU5EduiKqCzJMWbGw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YPHsDgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YPuwDgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_Gx8MgLX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YPuwTgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YQV0DgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_fSw28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YQV0TgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YQV0jgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_rpx28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YQV0zgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YQ84DgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//constraints"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_5WYJ0LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YQ84TgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YQ84jgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_C2zXMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YQ84zgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YRj8DgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_NxdG4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YRj8TgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YRj8jgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YSLADgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YSLATgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//interactions"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_meOioLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YSLAjgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YSLAzgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//statemachines"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_nAF5kLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7YSyEDgWEeSW7vxfDQgMFw">
+      <eAnnotations xmi:id="_7YSyETgWEeSW7vxfDQgMFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//usecases"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_L8AQkEohEeSHgI5H7gAeKA">
+      <eAnnotations xmi:id="_L8AQkUohEeSHgI5H7gAeKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../OSMKProfile/osmk.profile.uml#_hjNWID83EeSzHs6IsP0zcA"/>
+      </eAnnotations>
+      <appliedProfile href="../OSMKProfile/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_LcD_kDg2EeSL_oCrEVX-XQ" text="OSMK shall specify the clock intent " id="35" base_Class="_LcA8QDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcGb0Dg2EeSL_oCrEVX-XQ" text="System components of OSMK should be parameterizable so that Power-related parameters as throughput and latency should be assigned to them" id="36" base_Class="_LcF0wDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcHp8Dg2EeSL_oCrEVX-XQ" text="Instrumentation of functional code shall be possible" id="33" base_Class="_LcHC4Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcJfIDg2EeSL_oCrEVX-XQ" text="OSMK shall specify the voltage intent" id="34" base_Class="_LcI4ETg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcLUUDg2EeSL_oCrEVX-XQ" text="The OSMK  System definition shall allow configurable power related parameters  " id="39" base_Class="_LcKtQTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcNJgDg2EeSL_oCrEVX-XQ" text="The OSMK IP definition shall allow configurable power related parameters" id="37" base_Class="_LcMicTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcO-sDg2EeSL_oCrEVX-XQ" text="The OSMK Sub-System definition shall allow configurable power related parameters" id="38" base_Class="_LcOXoTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcQz4Dg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to express functional constraints in models with a standard language like OCL. Constraints should be written with reusable model queries. " id="43" base_Class="_LcQM0Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcSpEDg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to associate hardware specific information to datatypes, such as the number of bits required to store a given variable. " id="42" base_Class="_LcSCADg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcUeQDg2EeSL_oCrEVX-XQ" text="The OSMK should allow to express and trace requirements, associated to any model element in the system. " id="41" base_Class="_LcT3MDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcWTcDg2EeSL_oCrEVX-XQ" text="OSMK shall  support modeling of subsystem performance.  These include the subsystem latency, processing requirements, and power consumption for performing a specific use case." id="40" base_Class="_LcVsYDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcYIoDg2EeSL_oCrEVX-XQ" text="OSMK shall support modeling of subsystems that contain multiple processor cores." id="22" base_Class="_LcXhkDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcZ90Dg2EeSL_oCrEVX-XQ" text="OSMK shall  support specification of host environment for hosted subsystems (supported host processors, operating systems, etc.)" id="23" base_Class="_LcZWwTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcbzADg2EeSL_oCrEVX-XQ" text="OSMK may enable to model real-time constraints attached to setting and querying of attributes in &quot;IDLE&quot; mode." id="24" base_Class="_LcbL8Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcdoMDg2EeSL_oCrEVX-XQ" text="OSMK shall enable to model real-time constraints attached to exhange of information among components in &quot;RUNNING&quot; mode." id="25" base_Class="_LcdBITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcfdYDg2EeSL_oCrEVX-XQ" text="OSMK shall enable to formally attach real-time constraints within the context of real-time critical scenarios expressed in the form of sequence diagrams." id="26" base_Class="_Lce2UTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LchSkDg2EeSL_oCrEVX-XQ" text="OSMK shall enable to attach Functionnal/Extra-Functionnal properties to components." id="27" base_Class="_LcgrgDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcjHwDg2EeSL_oCrEVX-XQ" text="OSMK shall enable to attach real-time constraints to the information exchange process between components " id="28" base_Class="_LcigsDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lck88Dg2EeSL_oCrEVX-XQ" text="OSMK shall enable to attach real-time constraints to the information exchange process between components " id="29" base_Class="_LckV4Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcmyIDg2EeSL_oCrEVX-XQ" text="OSMK shall enable to decomponse the application and architecture into a number of components according to a CBD (Component Based Design) approach." id="3" base_Class="_LcmLEDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LconUTg2EeSL_oCrEVX-XQ" text="OSMK shall support modelling of sub-systems within the considered system of interest and shall allow to decompose the system of interest by a set a reusable model elements " id="2" base_Class="_LconUDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcrDkDg2EeSL_oCrEVX-XQ" text="OSMK shall support modelling of systems of interest covering entire capabilities executing on a given programmable equipment, including parts implemented by hardware analogue parts of the said equipement." id="1" base_Class="_LcqcgTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lcs4wDg2EeSL_oCrEVX-XQ" text="Geometrical description shall be specified as input  to OTC for thermal modeling" id="30" base_Class="_LcsRsTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lcut8Dg2EeSL_oCrEVX-XQ" text="OSMK shall enable to capture interactions among components according to message-oriented or flow-oriented interaction paradigms.&#xA;&#xA;Message-oriented : processing at callee starts only once the entire set of information of the message is available. Exchanges are discrete.&#xA;Flow-oriented : processing at callee starts as soon as the information of the message is incoming, and lasts until arrival of information stops. Exchanges are continuous." id="7" base_Class="_LcuG4Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcwjIDg2EeSL_oCrEVX-XQ" text="OSMK shall enforce that no assumptions are made concerning the implementation technology of the modelled components in the functional models." id="6" base_Class="_Lcv8ETg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LcyYUDg2EeSL_oCrEVX-XQ" text="OSMK shall support clear separation between functional model, performance model and power model" id="32" base_Class="_LcxxQTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc00kDg2EeSL_oCrEVX-XQ" text="OSMK must provide a way to identify and categorize the application and architecture models" id="5" base_Class="_Lc0NgDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc2pwTg2EeSL_oCrEVX-XQ" text="Physical description(material properties) shall be specified as input  to OTC for thermal modeling" id="31" base_Class="_Lc2pwDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc5GADg2EeSL_oCrEVX-XQ" text="OSMK must provide a way to express hierarchical dependencies between components" id="4" base_Class="_Lc4e8Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc67MDg2EeSL_oCrEVX-XQ" text="OSMK shall describe the interdependencies between the model types and the tools to be applied on them" id="9" base_Class="_Lc6UITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc9XcDg2EeSL_oCrEVX-XQ" text="OSMK shall authorize a same component to interact with other components with different connections such as message/flow oriented connections." id="8" base_Class="_Lc8wYDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lc_MoDg2EeSL_oCrEVX-XQ" text="The OSMK  shall include the extra-functional performance requirements of all application components on all resources in the platform." id="19" base_Class="_Lc-lkTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdBo4Dg2EeSL_oCrEVX-XQ" text="The  OSMK shall provide wizards implementing the modeling methodologies defined in the project so that it can be usable by non expert end users." id="17" base_Class="_LdBB0Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdDeEDg2EeSL_oCrEVX-XQ" text="The OSMK should integrate import/export  bridges  to common requirement tools" id="18" base_Class="_LdC3ATg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdF6UDg2EeSL_oCrEVX-XQ" text="Functional model should be written in SystemC language" id="15" base_Class="_LdFTQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdHvgDg2EeSL_oCrEVX-XQ" text="The  OSMK shall provide wizards implementing the modeling methodologies defined in the project so that it can be usable by non expert end users :  hide uneeded modeling language complexity to end users, customized to use end user vocabulary, etc." id="16" base_Class="_LdHIcTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdKLwDg2EeSL_oCrEVX-XQ" text="OSMK shall enforce the assumption that connections may only be active during RUNNING state." id="13" base_Class="_LdJksDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdMA8Dg2EeSL_oCrEVX-XQ" text="OSMK shall enforce that switch betweent &quot;IDLE&quot; and &quot;RUNNING&quot; is notified to components through arrival of start / stop messages." id="14" base_Class="_LdLZ4Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdOdMDg2EeSL_oCrEVX-XQ" text="OSMK shall support a default design pattern where components have a fundamental state machine with two virtual states : &quot;IDLE&quot; and &quot;RUNNING&quot;." id="11" base_Class="_LdN2ITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdQ5cDg2EeSL_oCrEVX-XQ" text="OSMK shall enforce the assumption that attributes may only be set during IDLE state." id="12" base_Class="_LdQSYDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdTVsDg2EeSL_oCrEVX-XQ" text="OSMK shall  support modeling of subsystem functions / services and how they can be combined into use cases." id="21" base_Class="_LdSuoDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdVK4Dg2EeSL_oCrEVX-XQ" text="OSMK shall support specification of non-functional requirements for correct operation of a subsystem in a system context. For example, requirements on bandwidth and latency for performing accesses to system memory." id="20" base_Class="_LdUj0Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdXnIDg2EeSL_oCrEVX-XQ" text="The OTC shall generate documentation automatically" id="108" base_Class="_LdXAEDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdaDYDg2EeSL_oCrEVX-XQ" text="The OTC shall describe system-level design through UML-diagrams, including properties and scenrios to be tested" id="107" base_Class="_LdZcUDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ldb4kTg2EeSL_oCrEVX-XQ" text="The OTC shall define SystemC-TLM test benches from use-cases" id="106" base_Class="_Ldb4kDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdeU0Dg2EeSL_oCrEVX-XQ" text="The OKSM shall support the expression of use-cases in XML-format" id="105" base_Class="_LddtwDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdgKADg2EeSL_oCrEVX-XQ" text="The OSKM shall support SystemC (-TLM), SystemVerilog  and UVM based verification methodologies" id="104" base_Class="_Ldfi8Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ldh_MDg2EeSL_oCrEVX-XQ" text="To optimize the performance and the power consumption, the OTC shall include tools suitable to generate executable codes on a virtual platform and on a real target HW platform" id="103" base_Class="_LdhYIDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdkbcDg2EeSL_oCrEVX-XQ" text="To support embedded application software development, the system simulator provides a back-door to the underlying host for event logging or external SW debuggers." id="102" base_Class="_Ldj0YDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdmQoDg2EeSL_oCrEVX-XQ" text="The model of tranformation between IP-XACT and PSM must be defined" id="99" base_Class="_LdlpkDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ldos4Dg2EeSL_oCrEVX-XQ" text="For inter-subsystem SW-to-SW communication a SW API is adopted which abstracts from low-level implementation aspects such as system address maps, interrupt configurations and bus protocols." id="101" base_Class="_LdoF0Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdqiETg2EeSL_oCrEVX-XQ" text="Project benchmark application SW should be available in a platform-neutral version with testbench input data for code analysis purpose." id="100" base_Class="_LdqiEDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lds-UDg2EeSL_oCrEVX-XQ" text="The OTC allow as input the Power characterization of underling HW architecture for supported operating points." id="98" base_Class="_LdsXQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LduzgDg2EeSL_oCrEVX-XQ" text="OSMK methodology shall support the specification of Power related IP constraints " id="97" base_Class="_LduMcTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdxPwDg2EeSL_oCrEVX-XQ" text="OSMK methodology shall support the specification of Power related System constraints" id="96" base_Class="_LdwosDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LdzE8Dg2EeSL_oCrEVX-XQ" text="OSMK methodology shall support UPF or CPF language for power intent description" id="95" base_Class="_Ldyd4Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld1hMTg2EeSL_oCrEVX-XQ" text="OSMK methodology shall support IP-XACT standard to specify the system platform architecture " id="94" base_Class="_Ld1hMDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld39cDg2EeSL_oCrEVX-XQ" text="The OTC should allow to import and export IPXACT architectural descriptions" id="93" base_Class="_Ld3WYDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld5LkTg2EeSL_oCrEVX-XQ" text="OSMK shall support specification of hardware interfaces required for subsystem integration. These include bus interfaces, clocks, interrupts, etc." id="92" base_Class="_Ld5LkDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld7AwTg2EeSL_oCrEVX-XQ" text="OTC shall be able from from IP-XACT descritpion to generate C Code for using peripherals (drivers). Hence, it should be able to do the link between software interfaces and HW." id="91" base_Class="_Ld7AwDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld818Tg2EeSL_oCrEVX-XQ" text="The OTC may enable to define PSM where the binding and scheduling assumptions of the components towards all platform elements may be specified." id="90" base_Class="_Ld818Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ld-rIDg2EeSL_oCrEVX-XQ" text="OSMK shall provide a structured categorization of type of information to define the system ontology" id="10" base_Class="_Ld-EEDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeAgUDg2EeSL_oCrEVX-XQ" text="The OTC shall support automatic generation of Container software in the case where MHAL Connectivity and ESSOR Architecture are supported." id="88" base_Class="_Ld_5QTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeCVgDg2EeSL_oCrEVX-XQ" text="The OTC Container software shall be linked seamlessly with the functional software." id="89" base_Class="_LeBucDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeEKsDg2EeSL_oCrEVX-XQ" text="The OTC shall define source code generation rules from CIM structural model to each of the supported programming languages.&#xA;The said rules will define the skeleton of source code implementing the said component as well as all of its external software interfaces." id="79" base_Class="_LeDjoDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeFY0Tg2EeSL_oCrEVX-XQ" text="OTC may enable initialization of an executable model in conformance with the underlying structural model." id="78" base_Class="_LeFY0Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeHOADg2EeSL_oCrEVX-XQ" text="The OTC modelling tools must provide a way to document the tools (functionnality, input, output)" id="77" base_Class="_LeGm8Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeJDMDg2EeSL_oCrEVX-XQ" text="VHDL shall be supported by the OTC as one programming language." id="82" base_Class="_LeIcITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeKRUDg2EeSL_oCrEVX-XQ" text="The generated software interfaces shall take as reference assumption the situation where connected components are colocalized." id="83" base_Class="_LeJqQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeLfcTg2EeSL_oCrEVX-XQ" text="C shall be supported by the OTC as one programming language." id="80" base_Class="_LeLfcDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeNUoDg2EeSL_oCrEVX-XQ" text="C++ may be supported by the OTC as one programming language." id="81" base_Class="_LeMtkDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeOiwTg2EeSL_oCrEVX-XQ" text="The OTC shall be capable to automatically generate source code from a Simulink executable model." id="86" base_Class="_LeOiwDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeQX8Dg2EeSL_oCrEVX-XQ" text="The OTC shall enable to define PSM where the mapping assumptions of the components towards processing elements and available execution support (connectivity, RTOS, …) are possible. Besides mapping components to execution elements, for architectures with non-cache-coherent or distributed memory an explicit mapping of data structures to on-chip memory is important to model the system" id="87" base_Class="_LePw4Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeRmETg2EeSL_oCrEVX-XQ" text="The OTC code generation rules from CIM structural model may maximize usage of standard-compliant mapping rules (e.g. defined by the OMG), with accurate report of eventual non-compliancy." id="84" base_Class="_LeRmEDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeTbQDg2EeSL_oCrEVX-XQ" text="The OTC shall be capable to automatically generate, from CIM structural model, component source code skeletons complying with applicable code generation rules." id="85" base_Class="_LeS0MTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeVQcDg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to define test scenarios with both a graphical and a textual notation" id="67" base_Class="_LeUpYTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeWekTg2EeSL_oCrEVX-XQ" text="The OSMK shall support the composition of mixed level models." id="66" base_Class="_LeWekDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeYTwDg2EeSL_oCrEVX-XQ" text="The OSMK shall support the specification of a power policy. " id="69" base_Class="_LeXssTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeZh4Dg2EeSL_oCrEVX-XQ" text="The OSMK should provide an automatic translation between textual and graphical notations for test scenarios" id="68" base_Class="_LeY60Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeawATg2EeSL_oCrEVX-XQ" text="The OSMK shall support the specification and implementation of a thermal management policy" id="70" base_Class="_LeawADg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Leb-ITg2EeSL_oCrEVX-XQ" text="IP, sub-system, package and board thermal constraints shall be specified as input to OTC" id="71" base_Class="_Leb-IDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LedMQTg2EeSL_oCrEVX-XQ" text="The OTC shall execute model checkers before code generation and stop in case of error" id="72" base_Class="_LedMQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeeaYTg2EeSL_oCrEVX-XQ" text="The OTC shall allow to write end users generators" id="73" base_Class="_LeeaYDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LegPkDg2EeSL_oCrEVX-XQ" text="The OTC shall allow to execute generators in batch mode" id="74" base_Class="_LefogTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LehdsDg2EeSL_oCrEVX-XQ" text="The OTC should allow end users to write generation and transformation workflows" id="75" base_Class="_Leg2oDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Leir0Dg2EeSL_oCrEVX-XQ" text="The OTC should allow to write  custom documentation generator from models, including diagrams" id="76" base_Class="_LeiEwTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lej58Tg2EeSL_oCrEVX-XQ" text="OSMK shall support that one executable model only corresponds to a certain sub-set of the structural model." id="59" base_Class="_Lej58Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LelIEjg2EeSL_oCrEVX-XQ" text="OSMK structural model shall be compliant to the greatest extent with OMG XMI standard." id="58" base_Class="_LelIETg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lem9QDg2EeSL_oCrEVX-XQ" text="OSMK application model (structural and executable model(s)) shall be considered as the PIM (Platform Independent Modelling) segment of the OpenES Tool Chain." id="57" base_Class="_LemWMDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeoLYDg2EeSL_oCrEVX-XQ" text="OSMK may include the Action Language for foundational UML (Alf) as a notation for behavioral aspects of UML-based high level system models." id="56" base_Class="_LenkUTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LepZgTg2EeSL_oCrEVX-XQ" text="Structural model of the OSMK Application Model shall be defined as an OMG SysML or UML compliant modeling profile." id="55" base_Class="_LepZgDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeqnoTg2EeSL_oCrEVX-XQ" text="The OSMK shall support UVM based verification methodology" id="64" base_Class="_LeqnoDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Ler1wTg2EeSL_oCrEVX-XQ" text="The OSMK shall enable modeling and (de)/composition of mixed digital analogue systems, including embedded processors." id="65" base_Class="_Ler1wDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LetD4jg2EeSL_oCrEVX-XQ" text="OSMK shall enable to capture real-time constraints in the structural model." id="62" base_Class="_LetD4Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LeuSATg2EeSL_oCrEVX-XQ" text="OSMK shall support usage of Simulink as a solution for executable models coupled with the structural model." id="63" base_Class="_LeuSADg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LewHMDg2EeSL_oCrEVX-XQ" text="OSMK may enable modifications in the underlying structural model to be automatically proposed for adoption based on a modification in the execution model that would break compliancy. Checkers have to be provided in order to ensure that the models are compliant to the modeling methodologies defined in the project." id="60" base_Class="_LevgITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LewuQTg2EeSL_oCrEVX-XQ" text="The real-time constraints capture may be compliant with MARTE." id="61" base_Class="_LewuQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Lex8YTg2EeSL_oCrEVX-XQ" text="OSMK shall enable to reference APIs for SDR use case. It shall be compliant with a SDR Architecture such as JTRS Devices API or ESSOR Architecture RD/RS/RSS APIs." id="49" base_Class="_Lex8YDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_LezKgTg2EeSL_oCrEVX-XQ" text="OSMK shall support enforcement of an optional modelling constraint that would forbid connections among components to be dynamically modified by components." id="48" base_Class="_LezKgDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le0YoDg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to define system level synchronization mechanisms, including SW/SW, SW/HW and HW/HW communications" id="45" base_Class="_LezxkTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le0_sTg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to define Hardware architecture models compliant with IPXACT import/export" id="44" base_Class="_Le0_sDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le2N0Tg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to define several abstraction levels for a given system of insterest from  high level unpartionned functionnal architecture to sw architecture, hardware architecture and software to hardware allocation. This modeling iteration can be transposed at subsystem level.&#xA;Furthermore, OSMK shall enable to distinguish, for each sub-system, the applicative part, potentially implemented in a functional software independent from the hosting equipement architecture, from the platform part, that has a dependency to the underlying hardware architecture. The description of application and architecture model shall be  separated" id="47" base_Class="_Le2N0Dg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le3b8Dg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to model Hardware/Software APIs. OSMK shall enable to select interfaces between applicative part and platform parts of the system through a set of reference APIs" id="46" base_Class="_Le204Tg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le4qEDg2EeSL_oCrEVX-XQ" text="OSMK shall provide a structured way to list the available executable models, list of structural models and rules that authorize links between them; this may be used for each specific flow" id="51" base_Class="_Le4DATg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le5RIjg2EeSL_oCrEVX-XQ" text="OSMK shall support expression of relationships between model elements, expressing that a model contains abstracted and/or synthesis information from other models, in regards with a specific usage." id="52" base_Class="_Le5RITg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le6fQTg2EeSL_oCrEVX-XQ" text="The OSMK shall support the expression of requirements in ReqIF (Requirement Interchange Format)" id="53" base_Class="_Le6fQDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le7tYDg2EeSL_oCrEVX-XQ" text="The OSMK shall allow to graphically represent model elements in tables when relevant, such as Allocation tables(from MARTE or SysML) or requirements." id="54" base_Class="_Le7GUTg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Requirement xmi:id="_Le8UcTg2EeSL_oCrEVX-XQ" text="OSMK shall enable to attach a number of executable models to the structural model." id="50" base_Class="_Le8UcDg2EeSL_oCrEVX-XQ"/>
+  <Requirements:Satisfy xmi:id="_0xHu8D9XEeSF0qkBHowe8A"/>
+  <Requirements:Satisfy xmi:id="_0xOcoD9XEeSF0qkBHowe8A"/>
+  <Requirements:Satisfy xmi:id="_0xVKUD9XEeSF0qkBHowe8A"/>
+  <Requirements:Satisfy xmi:id="_0xb4AD9XEeSF0qkBHowe8A"/>
+  <Requirements:Satisfy xmi:id="_0xh-oD9XEeSF0qkBHowe8A"/>
+  <Requirements:Satisfy xmi:id="_uJ68AD9YEeS5ve3KPE6Srg"/>
+  <Requirements:Satisfy xmi:id="_uKC30D9YEeS5ve3KPE6Srg"/>
+  <Requirements:Satisfy xmi:id="_uKKzoD9YEeS5ve3KPE6Srg"/>
+  <Requirements:Satisfy xmi:id="_uKRhUD9YEeS5ve3KPE6Srg"/>
+  <Requirements:Satisfy xmi:id="_uKYPAD9YEeS5ve3KPE6Srg"/>
+  <Requirements:Satisfy xmi:id="_mL3kED_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_mL-40D_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_mMG0oD_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_mMOJYD_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_mMVeID_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_mNO2AD_LEeSrIJKc2T1zqQ"/>
+  <Requirements:Satisfy xmi:id="_pXOaED_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pXVu0D_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pXdDkD_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pXjxQD_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pXqe8D_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pYdJID_9EeSqlqwqXkZrBw"/>
+  <Requirements:Satisfy xmi:id="_pYnhMD_9EeSqlqwqXkZrBw"/>
+  <Annotation:Annotation xmi:id="_0CHN0EohEeSCXIE1XdxI9w" base_Element="_LcA8QDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLXZwEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLYA0EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Cm9EEohEeSCXIE1XdxI9w" base_Element="_LcF0wDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLYn4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLYn4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0CwHAEohEeSCXIE1XdxI9w" base_Element="_LcHC4Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLZO8EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GLZO8UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="To be covered by OpenES Tool Chain"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0C3bwEohEeSCXIE1XdxI9w" base_Element="_LcI4ETg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLZ2AEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLadEEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0C_-oEohEeSCXIE1XdxI9w" base_Element="_LcKtQTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLadEUpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLbEIEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0DJIkEohEeSCXIE1XdxI9w" base_Element="_LcMicTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLbrMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLbrMUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0DRrcEohEeSCXIE1XdxI9w" base_Element="_LcOXoTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLcSQEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLcSQUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Da1YEohEeSCXIE1XdxI9w" base_Element="_LcQM0Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLc5UEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0DhjEEohEeSCXIE1XdxI9w" base_Element="_LcSCADg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLdgYEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GLdgYUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="On-going work : will be better covered after T1.4 Subsystem-related activities."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Do30EohEeSCXIE1XdxI9w" base_Element="_LcT3MDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLeHcEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0DvlgEohEeSCXIE1XdxI9w" base_Element="_LcVsYDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLeugEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLeugUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0D2TMEohEeSCXIE1XdxI9w" base_Element="_LcXhkDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLfVkEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GLfVkUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Subsystem related, will be addressed by T1.4"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0D9n8EohEeSCXIE1XdxI9w" base_Element="_LcZWwTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLf8oEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GLf8oUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Subsystem related, will be addressed by T1.4"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0EEVoEohEeSCXIE1XdxI9w" base_Element="_LcbL8Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLgjsEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLhKwEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0ELqYEohEeSCXIE1XdxI9w" base_Element="_LcdBITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLhKwUpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLhx0EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0ESYEEohEeSCXIE1XdxI9w" base_Element="_Lce2UTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLiY4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLiY4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0EbiAEohEeSCXIE1XdxI9w" base_Element="_LcgrgDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLi_8EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLi_8UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Ekr8EohEeSCXIE1XdxI9w" base_Element="_LcigsDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLjnAEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLjnAUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Et14EohEeSCXIE1XdxI9w" base_Element="_LckV4Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLkOEEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLkOEUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0E2_0EohEeSCXIE1XdxI9w" base_Element="_LcmLEDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLk1IEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0E-UkEohEeSCXIE1XdxI9w" base_Element="_LconUDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLlcMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FFCQEohEeSCXIE1XdxI9w" base_Element="_LcqcgTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLmDQEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FMXAEohEeSCXIE1XdxI9w" base_Element="_LcuG4Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLmqUEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FQocEohEeSCXIE1XdxI9w" base_Element="_LcsRsTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLnRYEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="UML is not adapted to express precise geometrical and physical description. Will be handled by tool- specific format"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FU54EohEeSCXIE1XdxI9w" base_Element="_Lcv8ETg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLn4cEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FZLUEohEeSCXIE1XdxI9w" base_Element="_Lc0NgDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLofgEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Fc1sEohEeSCXIE1XdxI9w" base_Element="_LcxxQTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLpGkEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLpGkUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FiVQEohEeSCXIE1XdxI9w" base_Element="_Lc4e8Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLptoEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Fl_oEohEeSCXIE1XdxI9w" base_Element="_Lc2pwDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLqUsEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="UML is not adapted to express precise geometrical and physical description. Will be handled by tool- specific format"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FpqAEohEeSCXIE1XdxI9w" base_Element="_Lc6UITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLq7wEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FuigEohEeSCXIE1XdxI9w" base_Element="_Lc8wYDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLri0EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GLri0UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to Sybsystem interaction : will be refined in T1.4."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0FyM4EohEeSCXIE1XdxI9w" base_Element="_Lc-lkTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLsJ4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLsJ4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0F3FYEohEeSCXIE1XdxI9w" base_Element="_LdBB0Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLsw8EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0F6vwEohEeSCXIE1XdxI9w" base_Element="_LdC3ATg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLtYAEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0F-aIEohEeSCXIE1XdxI9w" base_Element="_LdFTQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLumIEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GLumIUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Should be covered by OTC"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GCEgEohEeSCXIE1XdxI9w" base_Element="_LdHIcTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLvNMEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GFu4EohEeSCXIE1XdxI9w" base_Element="_LdJksDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLv0QEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GJZQEohEeSCXIE1XdxI9w" base_Element="_LdLZ4Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLwbUEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GNDoEohEeSCXIE1XdxI9w" base_Element="_LdN2ITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLxCYEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GQuAEohEeSCXIE1XdxI9w" base_Element="_LdQSYDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLxCYUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GUYYEohEeSCXIE1XdxI9w" base_Element="_LdSuoDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLxpcEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GLyQgEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Subsystem related, will be addressed by T1.4"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GYCwEohEeSCXIE1XdxI9w" base_Element="_LdUj0Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLy3kEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GLy3kUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GbtIEohEeSCXIE1XdxI9w" base_Element="_LdXAEDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GLzeoEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GLzeoUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GfXgEohEeSCXIE1XdxI9w" base_Element="_LdZcUDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL0FsEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Gia0EohEeSCXIE1XdxI9w" base_Element="_Ldb4kDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL0swEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL0swUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GleIEohEeSCXIE1XdxI9w" base_Element="_LddtwDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL1T0EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GohcEohEeSCXIE1XdxI9w" base_Element="_Ldfi8Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL164EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL164UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GrkwEohEeSCXIE1XdxI9w" base_Element="_LdhYIDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL2h8EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL2h8UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GuoEEohEeSCXIE1XdxI9w" base_Element="_LdlpkDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL3JAEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL3JAUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0GxrYEohEeSCXIE1XdxI9w" base_Element="_Ldj0YDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL3wEEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL3wEUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0G0HoEohEeSCXIE1XdxI9w" base_Element="_LdoF0Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL9PoEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GL9PoUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="On-going work : will be better covered after T1.4 Subsystem-related activities."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0G3yAEohEeSCXIE1XdxI9w" base_Element="_LdqiEDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL92sEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL92sUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0G6OQEohEeSCXIE1XdxI9w" base_Element="_LdsXQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL-dwEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GL-dwUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0G8qgEohEeSCXIE1XdxI9w" base_Element="_LduMcTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL_E0EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GL_E0UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0G_t0EohEeSCXIE1XdxI9w" base_Element="_LdwosDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GL_r4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMAS8EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HCxIEohEeSCXIE1XdxI9w" base_Element="_Ldyd4Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMA6AEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMA6AUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HF0cEohEeSCXIE1XdxI9w" base_Element="_Ld1hMDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMBhEEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HHpoEohEeSCXIE1XdxI9w" base_Element="_Ld3WYDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMCIIEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMCIIUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HKF4EohEeSCXIE1XdxI9w" base_Element="_Ld5LkDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMCvMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HMiIEohEeSCXIE1XdxI9w" base_Element="_Ld7AwDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMDWQEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMDWQUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HOXUEohEeSCXIE1XdxI9w" base_Element="_Ld818Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMD9UEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMD9UUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HQzkEohEeSCXIE1XdxI9w" base_Element="_Ld-EEDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMEkYEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HTP0EohEeSCXIE1XdxI9w" base_Element="_Ld_5QTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMFLcEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMFLcUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HVFAEohEeSCXIE1XdxI9w" base_Element="_LeBucDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMFygEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMFygUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HXhQEohEeSCXIE1XdxI9w" base_Element="_LeDjoDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMGZkEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMGZkUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HZWcEohEeSCXIE1XdxI9w" base_Element="_LeFY0Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMHAoEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMHnsEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HbLoEohEeSCXIE1XdxI9w" base_Element="_LeGm8Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMIOwEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMIOwUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hdn4EohEeSCXIE1XdxI9w" base_Element="_LeIcITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMI10EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMI10UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HfdEEohEeSCXIE1XdxI9w" base_Element="_LeJqQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMJc4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMJc4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HhSQEohEeSCXIE1XdxI9w" base_Element="_LeLfcDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMKD8EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMKD8UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HjHcEohEeSCXIE1XdxI9w" base_Element="_LeMtkDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMKrAEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMKrAUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hk8oEohEeSCXIE1XdxI9w" base_Element="_LeOiwDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMLSEEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMLSEUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hmx0EohEeSCXIE1XdxI9w" base_Element="_LePw4Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GML5IEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GML5IUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hn_8EohEeSCXIE1XdxI9w" base_Element="_LeRmEDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMMgMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMNHQEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hp1IEohEeSCXIE1XdxI9w" base_Element="_LeS0MTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMNHQUpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMNuUEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HrqUEohEeSCXIE1XdxI9w" base_Element="_LeUpYTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMOVYEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Hs4cEohEeSCXIE1XdxI9w" base_Element="_LeWekDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMO8cEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMO8cUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Simulation-related requirement, related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HutoEohEeSCXIE1XdxI9w" base_Element="_LeXssTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMPjgEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMPjgUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HxJ4EohEeSCXIE1XdxI9w" base_Element="_LeY60Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMQKkEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMQKkUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0HzmIEohEeSCXIE1XdxI9w" base_Element="_LeawADg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMQxoEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMQxoUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H1bUEohEeSCXIE1XdxI9w" base_Element="_Leb-IDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMRYsEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMRYsUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H3QgEohEeSCXIE1XdxI9w" base_Element="_LedMQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMR_wEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMSm0EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H5FsEohEeSCXIE1XdxI9w" base_Element="_LeeaYDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMTN4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMTN4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H664EohEeSCXIE1XdxI9w" base_Element="_LefogTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMT08EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMT08UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H8wEEohEeSCXIE1XdxI9w" base_Element="_Leg2oDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMUcAEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMUcAUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0H-lQEohEeSCXIE1XdxI9w" base_Element="_LeiEwTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMVDEEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMVqIEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IAacEohEeSCXIE1XdxI9w" base_Element="_Lej58Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMWRMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMWRMUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Co-simulation aspect related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IC2sEohEeSCXIE1XdxI9w" base_Element="_LelIETg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMW4QEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IEr4EohEeSCXIE1XdxI9w" base_Element="_LemWMDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMXfUEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Wording/methodological requirement."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IGhEEohEeSCXIE1XdxI9w" base_Element="_LenkUTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMYGYEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0II9UEohEeSCXIE1XdxI9w" base_Element="_LepZgDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMYtcEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IKygEohEeSCXIE1XdxI9w" base_Element="_LeqnoDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMZUgEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMZUgUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Related to OpenES Tool Chain."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IMnsEohEeSCXIE1XdxI9w" base_Element="_Ler1wDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMZ7kEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IPD8EohEeSCXIE1XdxI9w" base_Element="_LetD4Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMaioEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMaioUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IQ5IEohEeSCXIE1XdxI9w" base_Element="_LeuSADg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMbJsEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0ISuUEohEeSCXIE1XdxI9w" base_Element="_LevgITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMbwwEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMbwwUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Checkers are related to tooling aspect.  Should be handled by OTC."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IVKkEohEeSCXIE1XdxI9w" base_Element="_LewuQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMcX0EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMcX0UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IXm0EohEeSCXIE1XdxI9w" base_Element="_Lex8YDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMc-4EpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GMc-4UpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="On-going work : will be better covered after T1.4 Subsystem API related activities."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IY08EohEeSCXIE1XdxI9w" base_Element="_LezKgDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMdl8EpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IaqIEohEeSCXIE1XdxI9w" base_Element="_LezxkTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMe0EEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GMfbIEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="On-going work : will be better covered after T1.4 Subsystem-related activities."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IdGYEohEeSCXIE1XdxI9w" base_Element="_Le0_sDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMgCMEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Ie7kEohEeSCXIE1XdxI9w" base_Element="_Le2N0Dg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMgpQEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IgJsEohEeSCXIE1XdxI9w" base_Element="_Le204Tg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMhQUEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.4"/>
+    <entries xmi:id="_GMhQUUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="On-going work : will be better covered after T1.4 Subsystem-related activities."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Iil8EohEeSCXIE1XdxI9w" base_Element="_Le4DATg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMh3YEpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IkbIEohEeSCXIE1XdxI9w" base_Element="_Le5RITg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMiecEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.3"/>
+    <entries xmi:id="_GMiecUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="NFP-related : will be addressed by T1.3"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0ImQUEohEeSCXIE1XdxI9w" base_Element="_Le6fQDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMjFgEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="OTC"/>
+    <entries xmi:id="_GMjFgUpEEeSv1sXSSK6e_Q" key="_ocMTkEohEeSHgI5H7gAeKA" value="Tooling aspect, not related to OSMK modelling libraries. Requirement modelling is supported by OSMK. Specific bridges from other formats should be implemented in OTC."/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0IoFgEohEeSCXIE1XdxI9w" base_Element="_Le7GUTg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMjskEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Annotation:Annotation xmi:id="_0Ip6sEohEeSCXIE1XdxI9w" base_Element="_Le8UcDg2EeSL_oCrEVX-XQ">
+    <entries xmi:id="_GMkToEpEEeSv1sXSSK6e_Q" key="_n8OaEEohEeSHgI5H7gAeKA" value="T1.2"/>
+  </Annotation:Annotation>
+  <Requirements:Satisfy xmi:id="_ZHdooEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZHlkcEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZHs5MEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZHzm4EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZH67oEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZIKMMEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZIUkQEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZJ7GwEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZKEQsEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZKOowEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZKXysEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZKhjsEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZKsi0EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZLqzMEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZL0kMEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZL-VMEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZMHfIEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZMQpEEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZMZzAEpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZMi88EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZMsG4EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZNAP8EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZNKA8EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZNTK4EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_ZNcU0EpKEeSdZO1B-K5GYg"/>
+  <Requirements:Satisfy xmi:id="_r3LaoEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r3VLoEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r3otoEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r30T0EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r4EygEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r4aJsEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r4j6sEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r5sjIEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r527MEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r6FksEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r6Qj0EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r6bi8EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r6ud4EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r7pq8EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r70DAEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r7_pMEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r8JaMEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r8VAYEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r8fYcEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r8pwgEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r80IkEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r8-goEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r9HqkEpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r9do0EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r9oA4EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r9yY8EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_r98J8EpLEeScGPLRuySWxA"/>
+  <Requirements:Satisfy xmi:id="_GQ0pwNbnEeSyeMP5nMIeKA" base_Abstraction="_GJpDsNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GQ6wYNbnEeSyeMP5nMIeKA" base_Abstraction="_GQ2e8NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GRAP8NbnEeSyeMP5nMIeKA" base_Abstraction="_GQ7-gNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GSxxkNbnEeSyeMP5nMIeKA" base_Abstraction="_GSrq8NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GTKzINbnEeSyeMP5nMIeKA" base_Abstraction="_GTEsgNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GTSH4NbnEeSyeMP5nMIeKA" base_Abstraction="_GTLaMNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GTaDsNbnEeSyeMP5nMIeKA" base_Abstraction="_GTSu8NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GTh_gNbnEeSyeMP5nMIeKA" base_Abstraction="_GTbR0NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GTqiYNbnEeSyeMP5nMIeKA" base_Abstraction="_GTkbwNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GT1hgNbnEeSyeMP5nMIeKA" base_Abstraction="_GTva4NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GT82QNbnEeSyeMP5nMIeKA" base_Abstraction="_GT2voNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUDj8NbnEeSyeMP5nMIeKA" base_Abstraction="_GT-EYNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GULfwNbnEeSyeMP5nMIeKA" base_Abstraction="_GUFZINbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUSNcNbnEeSyeMP5nMIeKA" base_Abstraction="_GUMG0NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUdzoNbnEeSyeMP5nMIeKA" base_Abstraction="_GUXF8NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUkhUNbnEeSyeMP5nMIeKA" base_Abstraction="_GUeasNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUr2ENbnEeSyeMP5nMIeKA" base_Abstraction="_GUlvcNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GUzK0NbnEeSyeMP5nMIeKA" base_Abstraction="_GUsdINbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GU54gNbnEeSyeMP5nMIeKA" base_Abstraction="_GUzx4NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GVBNQNbnEeSyeMP5nMIeKA" base_Abstraction="_GU6fkNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GVJJENbnEeSyeMP5nMIeKA" base_Abstraction="_GVB0UNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GVsisNbnEeSyeMP5nMIeKA" base_Abstraction="_GVmcENbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GVz3cNbnEeSyeMP5nMIeKA" base_Abstraction="_GVtw0NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GWdXsNbnEeSyeMP5nMIeKA" base_Abstraction="_GWZGQNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GWhpINbnEeSyeMP5nMIeKA" base_Abstraction="_GWd-wNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GWl6kNbnEeSyeMP5nMIeKA" base_Abstraction="_GWiQMNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GWtPUNbnEeSyeMP5nMIeKA" base_Abstraction="_GWo94NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GWyH0NbnEeSyeMP5nMIeKA" base_Abstraction="_GWt2YNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GW2ZQNbnEeSyeMP5nMIeKA" base_Abstraction="_GWyu4NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GW6qsNbnEeSyeMP5nMIeKA" base_Abstraction="_GW3AUNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXBYYNbnEeSyeMP5nMIeKA" base_Abstraction="_GW9G8NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXIGENbnEeSyeMP5nMIeKA" base_Abstraction="_GXD0oNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXMXgNbnEeSyeMP5nMIeKA" base_Abstraction="_GXJUMNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXQo8NbnEeSyeMP5nMIeKA" base_Abstraction="_GXNloNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXU6YNbnEeSyeMP5nMIeKA" base_Abstraction="_GXR3ENbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXqRkNbnEeSyeMP5nMIeKA" base_Abstraction="_GXnOQNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXujANbnEeSyeMP5nMIeKA" base_Abstraction="_GXq4oNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GXy0cNbnEeSyeMP5nMIeKA" base_Abstraction="_GXvxINbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GX3F4NbnEeSyeMP5nMIeKA" base_Abstraction="_GXzbgNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GX7XUNbnEeSyeMP5nMIeKA" base_Abstraction="_GX4UANbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GX_owNbnEeSyeMP5nMIeKA" base_Abstraction="_GX8lcNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYD6MNbnEeSyeMP5nMIeKA" base_Abstraction="_GYAP0dbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYILoNbnEeSyeMP5nMIeKA" base_Abstraction="_GYEhQdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYMdENbnEeSyeMP5nMIeKA" base_Abstraction="_GYIysdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYQugNbnEeSyeMP5nMIeKA" base_Abstraction="_GYNEIdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYU_8NbnEeSyeMP5nMIeKA" base_Abstraction="_GYRVkNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYwdwNbnEeSyeMP5nMIeKA" base_Abstraction="_GYuBgNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GYzhENbnEeSyeMP5nMIeKA" base_Abstraction="_GYxE0NbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZVFgNbnEeSyeMP5nMIeKA" base_Abstraction="_GZSCMNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZYI0NbnEeSyeMP5nMIeKA" base_Abstraction="_GZVskNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZbMINbnEeSyeMP5nMIeKA" base_Abstraction="_GZYv4dbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZePcNbnEeSyeMP5nMIeKA" base_Abstraction="_GZbzMdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZh50NbnEeSyeMP5nMIeKA" base_Abstraction="_GZe2gdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZ3RANbnEeSyeMP5nMIeKA" base_Abstraction="_GZzmoNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZ6UUNbnEeSyeMP5nMIeKA" base_Abstraction="_GZ34ENbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GZ9XoNbnEeSyeMP5nMIeKA" base_Abstraction="_GZ67YNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaBCANbnEeSyeMP5nMIeKA" base_Abstraction="_GZ9-sdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaEFUNbnEeSyeMP5nMIeKA" base_Abstraction="_GaBpENbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaHIoNbnEeSyeMP5nMIeKA" base_Abstraction="_GaEsYNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaKL8NbnEeSyeMP5nMIeKA" base_Abstraction="_GaHvsNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaNPQNbnEeSyeMP5nMIeKA" base_Abstraction="_GaKzANbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaQSkNbnEeSyeMP5nMIeKA" base_Abstraction="_GaN2UNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaTV4NbnEeSyeMP5nMIeKA" base_Abstraction="_GaQ5oNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaWZMNbnEeSyeMP5nMIeKA" base_Abstraction="_GaT88dbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GaZcgNbnEeSyeMP5nMIeKA" base_Abstraction="_GaXAQdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GadG4NbnEeSyeMP5nMIeKA" base_Abstraction="_GaaDkdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GagKMNbnEeSyeMP5nMIeKA" base_Abstraction="_GadG4tbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_Gaj0kNbnEeSyeMP5nMIeKA" base_Abstraction="_GahYUNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_Gane8NbnEeSyeMP5nMIeKA" base_Abstraction="_GalCsNbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GarJUNbnEeSyeMP5nMIeKA" base_Abstraction="_GaoGAdbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_GauMoNbnEeSyeMP5nMIeKA" base_Abstraction="_GarJUtbnEeSyeMP5nMIeKA"/>
+  <Requirements:Satisfy xmi:id="_Gax3ANbnEeSyeMP5nMIeKA" base_Abstraction="_GavawNbnEeSyeMP5nMIeKA"/>
+</xmi:XMI>

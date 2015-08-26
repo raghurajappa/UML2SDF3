@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirement="http://OSMK/schemas/Requirement/_hjN9MD83EeSzHs6IsP0zcA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://OSMK/schemas/Requirement/_hjN9MD83EeSzHs6IsP0zcA/2 ../OSMKProfile/osmk.profile.uml#_hjN9MT83EeSzHs6IsP0zcA">
+  <uml:Model xmi:id="_uC0mlD85EeSMVO0Wc1d0pQ" name="TCSrequirement_traceability_model">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRwacD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcqcgTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 1 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRxBgT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LconUDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      <body>The requirement 2 is satisfied by TCS case studie because the WF application (PHY layer only) is decomposed into systems and subsystems. There,  the particularity is that System is also a function. </body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRxokT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcmLEDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 3 is satisfied by TCS case study because the &quot;component&quot; PHY is described using the UML component diagram and respected the CDB method.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRyPoT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc4e8Dg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      <body>The requirement 4 is satisfied by TCS case study because hierchical dependencies between component is respected with Capella and UML tools.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRy2sT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc0NgDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 5 is satisfied by TCS case study because the application model is decomposed into functions (represented by class diagram nad Capella Tool).  There is no HW consideration.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uRzdwT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lcv8ETg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_LtyrANPBEeSxscultBGwZA"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_bByZgNPBEeSxscultBGwZA"/>
+      <body>The requirement 6 is satisfied by TCS case study because the MDA approach has been followed in Capella and UML
+</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR0E0T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcuG4Dg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 7 is satisfied by TCS case study because Capella supports this feature.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR0r4T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc6UITg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 9 is satisfied by TCS case study because Capella is bale to express model types to be crated/edited/transformed</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR1S8T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdN2ITg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 11 is satisfied by TCS case study because in Capella a viewpoint is able to add status on the component</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR16AT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdC3ATg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 18 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR2hET85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc-lkTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <body>The requirement 19 is satisfied by TCS case study because Capella is able to add viewpoints based on the MARTE profile and it is extended to UML.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR3IIT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lce2UTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 26 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR3vMT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcgrgDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 27 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR4WQT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcigsDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 28 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR49UT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LckV4Dg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 29 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR5kYT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcxxQTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 32 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR6LcT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcI4ETg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 34 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR6ygT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcA8QDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 35 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR7ZkT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcF0wDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 36 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR8AoT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcMicTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 37 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR8nsT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcOXoTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 38 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR9OwT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcKtQTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 39 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR910T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcT3MDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 41 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR-c4T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcSCADg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 42 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR_D8T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcQM0Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 43 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uR_rAT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le0_sDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 44 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSASET85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LezxkTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 45 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSA5IT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le204Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 46 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSBgMT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le2N0Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 47 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSCHQT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lex8YDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 49 is satisfied by TCS case study because it is defined in the capella tool and is in progress to be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSCuUT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le8UcDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 50 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSDVYT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le6fQDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 53 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSEjgT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le7GUTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 54 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSFKkT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LepZgDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 55 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSFxoT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LemWMDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 57 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSGYsT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LelIETg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 58 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSG_wT85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lej58Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 59 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSHm0T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LevgITg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 60 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSIN4T85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LewuQDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 61 is satisfied by TCS case study because it is defined on the Sequence diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSJcAD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LetD4Tg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 62 is satisfied by TCS case study because it is defined on the structural diagram of Capella with the MARTE Profile and it could be exported to UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSKDED85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeuSADg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 63 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSKqID85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeUpYTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <annotatedElement xmi:type="uml:Class" href="SDR.uml#_x0oyINO0EeSxscultBGwZA"/>
+      <body>The requirement 67 is satisfied by TCS case study because it is the aim of the modeler Capella and UML</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSLRMD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeY60Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 68 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSL4QD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeXssTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 69 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSMfUD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeawADg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 70 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSNGYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ld1hMDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 94 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSNtcD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ldyd4Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 95 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSOUgD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdwosDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 96 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSO7kD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LduMcTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 97 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSPioD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdlpkDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 99 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSQJsD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LddtwDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 105 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSQwwD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdZcUDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 107 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uSRX0D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdXAEDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 108 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_xW6oMNRgEeS7U5D8pJREsA">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc8wYDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Interface" href="SDR.uml#_M3YgoNMOEeS4HPgQ289pxw"/>
+      <body>The requirement 8 is satisified by TCS case study because the interactions in Capella can be specified in flow or message oriented. It could be easily exported to an UML tool.</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uC0mlT85EeSMVO0Wc1d0pQ">
+      <importedPackage xmi:type="uml:Model" href="../requirements/OpenES_Requirements.uml#_7UYicDgWEeSW7vxfDQgMFw"/>
+    </packageImport>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uC1NoD85EeSMVO0Wc1d0pQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uC1NoT85EeSMVO0Wc1d0pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../OSMKProfile/osmk.profile.uml#_hjN9MT83EeSzHs6IsP0zcA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_jWyfgD8qEeSQQvkAoKcNfQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirement:Satisfy xmi:id="_uRxBgD85EeSMVO0Wc1d0pQ" base_Comment="_uRwacD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcqcgTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uRxokD85EeSMVO0Wc1d0pQ" base_Comment="_uRxBgT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LconUDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uRyPoD85EeSMVO0Wc1d0pQ" base_Comment="_uRxokT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcmLEDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uRy2sD85EeSMVO0Wc1d0pQ" base_Comment="_uRyPoT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc4e8Dg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uRzdwD85EeSMVO0Wc1d0pQ" base_Comment="_uRy2sT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc0NgDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR0E0D85EeSMVO0Wc1d0pQ" base_Comment="_uRzdwT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lcv8ETg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR0r4D85EeSMVO0Wc1d0pQ" base_Comment="_uR0E0T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcuG4Dg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR1S8D85EeSMVO0Wc1d0pQ" base_Comment="_uR0r4T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc6UITg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR16AD85EeSMVO0Wc1d0pQ" base_Comment="_uR1S8T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdN2ITg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR2hED85EeSMVO0Wc1d0pQ" base_Comment="_uR16AT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdC3ATg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR3IID85EeSMVO0Wc1d0pQ" base_Comment="_uR2hET85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc-lkTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR3vMD85EeSMVO0Wc1d0pQ" base_Comment="_uR3IIT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lce2UTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR4WQD85EeSMVO0Wc1d0pQ" base_Comment="_uR3vMT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcgrgDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR49UD85EeSMVO0Wc1d0pQ" base_Comment="_uR4WQT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcigsDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR5kYD85EeSMVO0Wc1d0pQ" base_Comment="_uR49UT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LckV4Dg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR6LcD85EeSMVO0Wc1d0pQ" base_Comment="_uR5kYT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcxxQTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR6ygD85EeSMVO0Wc1d0pQ" base_Comment="_uR6LcT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcI4ETg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR7ZkD85EeSMVO0Wc1d0pQ" base_Comment="_uR6ygT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcA8QDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR8AoD85EeSMVO0Wc1d0pQ" base_Comment="_uR7ZkT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcF0wDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR8nsD85EeSMVO0Wc1d0pQ" base_Comment="_uR8AoT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcMicTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR9OwD85EeSMVO0Wc1d0pQ" base_Comment="_uR8nsT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcOXoTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR910D85EeSMVO0Wc1d0pQ" base_Comment="_uR9OwT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcKtQTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR-c4D85EeSMVO0Wc1d0pQ" base_Comment="_uR910T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcT3MDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR_D8D85EeSMVO0Wc1d0pQ" base_Comment="_uR-c4T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcSCADg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uR_rAD85EeSMVO0Wc1d0pQ" base_Comment="_uR_D8T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcQM0Tg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSASED85EeSMVO0Wc1d0pQ" base_Comment="_uR_rAT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le0_sDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSA5ID85EeSMVO0Wc1d0pQ" base_Comment="_uSASET85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LezxkTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSBgMD85EeSMVO0Wc1d0pQ" base_Comment="_uSA5IT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le204Tg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSCHQD85EeSMVO0Wc1d0pQ" base_Comment="_uSBgMT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le2N0Dg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSCuUD85EeSMVO0Wc1d0pQ" base_Comment="_uSCHQT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lex8YDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSDVYD85EeSMVO0Wc1d0pQ" base_Comment="_uSCuUT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le8UcDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSEjgD85EeSMVO0Wc1d0pQ" base_Comment="_uSDVYT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le6fQDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSFKkD85EeSMVO0Wc1d0pQ" base_Comment="_uSEjgT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le7GUTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSFxoD85EeSMVO0Wc1d0pQ" base_Comment="_uSFKkT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LepZgDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSGYsD85EeSMVO0Wc1d0pQ" base_Comment="_uSFxoT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LemWMDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSG_wD85EeSMVO0Wc1d0pQ" base_Comment="_uSGYsT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LelIETg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSHm0D85EeSMVO0Wc1d0pQ" base_Comment="_uSG_wT85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lej58Dg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSIN4D85EeSMVO0Wc1d0pQ" base_Comment="_uSHm0T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LevgITg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSI08D85EeSMVO0Wc1d0pQ" base_Comment="_uSIN4T85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LewuQDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSJcAT85EeSMVO0Wc1d0pQ" base_Comment="_uSJcAD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LetD4Tg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSKDET85EeSMVO0Wc1d0pQ" base_Comment="_uSKDED85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeuSADg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSKqIT85EeSMVO0Wc1d0pQ" base_Comment="_uSKqID85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeUpYTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSLRMT85EeSMVO0Wc1d0pQ" base_Comment="_uSLRMD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeY60Tg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSL4QT85EeSMVO0Wc1d0pQ" base_Comment="_uSL4QD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeXssTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSMfUT85EeSMVO0Wc1d0pQ" base_Comment="_uSMfUD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeawADg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSNGYT85EeSMVO0Wc1d0pQ" base_Comment="_uSNGYD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ld1hMDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSNtcT85EeSMVO0Wc1d0pQ" base_Comment="_uSNtcD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ldyd4Tg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSOUgT85EeSMVO0Wc1d0pQ" base_Comment="_uSOUgD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdwosDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSO7kT85EeSMVO0Wc1d0pQ" base_Comment="_uSO7kD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LduMcTg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSPioT85EeSMVO0Wc1d0pQ" base_Comment="_uSPioD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdlpkDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSQJsT85EeSMVO0Wc1d0pQ" base_Comment="_uSQJsD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LddtwDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSQwwT85EeSMVO0Wc1d0pQ" base_Comment="_uSQwwD85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdZcUDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_uSRX0T85EeSMVO0Wc1d0pQ" base_Comment="_uSRX0D85EeSMVO0Wc1d0pQ">
+    <from xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdXAEDg2EeSL_oCrEVX-XQ"/>
+  </Requirement:Satisfy>
+  <Requirement:Satisfy xmi:id="_ygopUNRgEeS7U5D8pJREsA" base_Comment="_xW6oMNRgEeS7U5D8pJREsA"/>
+</xmi:XMI>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirement="http://OSMK/schemas/Requirement/__2tKUNLmEeSxfJeW9LXdZg/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://OSMK/schemas/Requirement/__2tKUNLmEeSxfJeW9LXdZg/3 ../../openes_examples_arnaud/OSMKProfile/osmk.profile.uml#__2tKUdLmEeSxfJeW9LXdZg">
+  <uml:Model xmi:id="_uCzYcD85EeSMVO0Wc1d0pQ" name="CEArequirement_traceability_model">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uFijYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcqcgTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 1 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOgSID85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LconUDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 2 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOhgQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcmLEDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 3 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOiuYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc4e8Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 4 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOlKoD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lcv8ETg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 6 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOmYwD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcuG4Dg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#_5DoJsESsEeS1A8a25jnZOw"/>
+      <body>The requirement 7 is satisfied by OSMK because it includes UML mechanisms for connecting components through their ports (thereby specifying the potential interactions), and UML mechanisms for communications between components. Package Req_7_example (from CEA_Examples) imports elements from model WaitNotifyExample: System and NotifyProtocol. System includes an assembly of components, communing with signals through their ports. It adresses the &quot;message-oriented&quot; communication paradigm of requirement 7. The NotifyProtocol class is used to type ports of components assembled within System. It declarares a Reception for a Signal called Notify, and thereby enables exchange of Notify signals between the two assembled components.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOnm4D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc6UITg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 9 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOo1AD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdN2ITg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#_AruW4EWGEeSowfQPSaIaYg"/>
+      <body>The requirement 11 is satisfied by OSMK because UML state machines can be used to specify the kind of fundamental state machines required by Req-11. Package Req_11_example includes the definition of such a state machine, with the definition of an IDLE and a RUNNING state. The example is only partial, since it does not specify the triggers and reactions associated with each of the transition. An actual statemachine would have to specify those elements, and encode the rules for state changes between IDLE and RUNNING. </body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOqDID85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdC3ATg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 18 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOrRQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc-lkTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      <body>The requirement 19 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. Constraints are specified using NFP_Constraints. Examples are given through the &quot;A NFPs&quot; class.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOsfYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lce2UTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 26 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOttgD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcgrgDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 27 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOu7oD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcigsDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 28 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOwJwD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LckV4Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 29 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOxX4D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcxxQTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 32 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOymAD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcI4ETg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 34 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uOz0ID85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcA8QDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 35 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO1CQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcF0wDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      <body>The requirement 36 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of latency constraint (which is a power related requirement) is given with class Scenario NFP Requirement.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO1pUD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcMicTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      <body>The requirement 37 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO23cD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcOXoTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      <body>The requirement 38 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO4FkD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcKtQTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      <body>The requirement 39 is satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. These properties have been specified according to inputs required by DOCEA power and thermal analysis tools. Specific values are specified by instantiating these class, and assigning the instances (using the Marte Assign relationship) to model elements which represent Systems, sub-systems or IPs.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO5TsD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcT3MDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 41 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO6h0D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcSCADg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 42 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO7v8D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcQM0Tg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#_tI_GYEJsEeSQQvkAoKcNfQ"/>
+      <body>The requirement 43 is satisfied by the OSMK because it includes UML and OCL. The example reported in package Req_43_example (from model CEA_Examples) illustrates the usage of OCL in the frame of UML constraints, to specify the allowed range of values on a parameter of an Operation. In addition, the example illustrates the definition and usage of reusable OCL queries, specified as &quot;bodyConditions&quot; of operations of a class.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO8-ED85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le0_sDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 44 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uO-zQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le204Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 46 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPABYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le2N0Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 47 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPBPgD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lex8YDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 49 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPB2kD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le8UcDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#__64pkEP1EeS1A8a25jnZOw"/>
+      <body>The requirement 50 is satisfied by OSMK because fUML/PSCS (i.e., executable subsets of UML) are part of the OSMK. Package Req_50_example (from model CEA_Examples) highlights executable Activities imported from model WaitNotifyExample. These activities (from model WaitNotifyExample) provide examples of high level synchronization in executable PSCS models, using signals. These activities are executable, and attach to structural elements of the model (in UML terms, they are &quot;classifier behaviors&quot;)</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPDEsD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le6fQDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 53 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPES0D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Le7GUTg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 54 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPFg8D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LepZgDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 55 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPGIAD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LemWMDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 57 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPHWID85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LelIETg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 58 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPIkQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lej58Dg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 59 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPJyYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LevgITg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 60 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPKZcD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LewuQDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 61 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPLnkD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LetD4Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 62 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPM1sD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeuSADg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 63 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPNcwD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeUpYTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#_ss5NwEWBEeSrQ6Cqd6WSQA"/>
+      <body>The requirement 67 is satisfied by OSMK because it encompasses UML and Alf. Package Req_67_example (from model CEA_Examples) imports elements from model TestSuite, which is an excerpt of the normative PSCS test suite. This test suite contains a number of executable models. These models actually describe both systems under tests, and test behaviors. These test behaviors are specified either graphically using sequence diagrams, or textually using the Alf notation. It thereby demonstrates how the OSMK satisfy OpenES Req 67, since OSMK encompasses both UML and Alf. Activity &quot;Tester Classifier Behavior&quot; (imported by the Req_67_example package), specified within an activity diagram, describes the behavior of a so-called Tester object. Mouve over the activity and follow the hyperlink to see the corresponding diagram. Class &quot;TestCaseAssembly&quot; (also imported the Req_67_example model) illustrates the usage of Alf for the specification of the test() method. It relies on the usage of the AssertionLibrary (imported by the TestSuite, and available in the OpenES archive), which includes the definition of usual Assertion procedures. These procedures are themselves specified in Alf, and executable according the semantics of fUML.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPOq4D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeY60Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 68 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPPR8D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeXssTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_lN13UNLQEeSxfJeW9LXdZg"/>
+      <body>The requirement 69 is partially satisfied by the definition of reusable classes (DigitalBlockPowerInput and SMPSPowerInput), specifying a set of power related non-functional properties. The complete details of the power policy are not directly captured by these classes, but with references to external configuration files (e.g., leak_ref_table) which are specific to Docea tools.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPQgED85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LeawADg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_ORoi0NLnEeSxfJeW9LXdZg"/>
+      <annotatedElement xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_GbgbcNLkEeSxfJeW9LXdZg"/>
+      <body>The requirement 70 is satisfied by the definition of OSMK::Thermal sub-profile. This profile captures information related to thermal analysis, and has been designed according to information required by Docea thermal analysis tools. A usage example is given in package ThermalInputs of the DOCEA example model.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPRuMD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ld1hMDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 94 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPSVQD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Ldyd4Tg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 95 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPTjYD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdwosDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      <body>The requirement 96 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of power constraint is given with class Scenario NFP Requirement. In the example,  the constraint refers to a specific usage scenario. This is done by having a lifeline as the constrained element of the underlying UML constraint. The same mechanism can be used to constrain more generally a system (or sub-system, or specific IP) by constraining the appropriate model element.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPUKcD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LduMcTg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      <body>The requirement 97 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). An example of power constraint is given with class Scenario NFP Requirement. In the example,  the constraint refers to a specific usage scenario. This is done by having a lifeline as the constrained element of the underlying UML constraint. The same mechanism can be used to constrain more generally a system (or sub-system, or specific IP) by constraining the appropriate model element.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPVYkD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdlpkDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 99 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPV_oD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LddtwDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 105 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPWmsD85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdZcUDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 107 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uPX00D85EeSMVO0Wc1d0pQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdXAEDg2EeSL_oCrEVX-XQ"/>
+      <body>The requirement 108 is satisfied by ... because ...</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_aSS3wEJtEeSQQvkAoKcNfQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Lc0NgDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Profile" href="../../OSMK/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+      <annotatedElement xmi:type="uml:Model" href="../common/DefaultOSMKCategories.uml#_0lnGgD8rEeSQQvkAoKcNfQ"/>
+      <body>The requirement 5 is satisfied by the OSMK::Annotation subprofile beacause it enables to annotate any kind of model element with key / value pairs, including information related to categories. </body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_OL09gEWUEeSV4M5t5MtZFw">
+      <annotatedElement xmi:type="uml:Package" href="CEA_Examples.uml#_JeKxAEWTEeSV4M5t5MtZFw"/>
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LenkUTg2EeSL_oCrEVX-XQ"/>
+      <body> The requirement 56 is satisfied by OSMK because if includes Alf. Package Req_56_example (from model CEA_Examples) imports elements from the TestSuite model. In particular, the imported Class A has a classifier behavior. This classifier behavior is expressed textually in Alf, and specifies that A is reactive to occurences of signal S. Signal received are used to assign some values to local property A::p.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_XMRqUEWUEeSV4M5t5MtZFw">
+      <body>WARNING: Il manque le Req 56 dans le modèle de requirement</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_dVgqMNRyEeSqCKOitOAVvQ">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_Leb-IDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Package" href="DOCEA_inputs.uml#_ORoi0NLnEeSxfJeW9LXdZg"/>
+      <annotatedElement xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_GbgbcNLkEeSxfJeW9LXdZg"/>
+      <body>The requirement 71 is satisfied by the definition of OSMK::Thermal sub-profile. This profile captures information related to thermal analysis, and has been designed according to information required by Docea thermal analysis tools. A usage example is given in package ThermalInputs of the DOCEA example model.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_mkE4sNZ5EeS949D91HcCwA">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LdUj0Tg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      <body>The requirement 20 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The specific context for the evaluation of those constraints (as requested by the requirement), are identified using the &quot;mode&quot; attribute NFP_Constraint, which refers to a particular operational mode specified as a State in a StateMachine. The constrained element is identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_vCSbINZ5EeS949D91HcCwA">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcbL8Tg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      <body>The requirement 24 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The IDLE mode is identified using the MARTE::Mode stereotype, and apply it on a State of a StateMachine (in the provided example, the state machine belongs to class A, from package Req_11_example in the model provided by CEA). The timing constraints are specified using NFP_Constraints. The property on which the read / write acces time constraint apply are identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_21BXoNZ5EeS949D91HcCwA">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcdBITg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="CEA_Examples.uml#_zsujQNZ0EeSqCKOitOAVvQ"/>
+      <body>The requirement 25 is satisfied by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs. The RUNNING mode is identified using the MARTE::Mode stereotype, and apply it on a State of a StateMachine (in the provided example, the state machine belongs to class A, from package Req_11_example in the model provided by CEA). The timing constraints are specified using NFP_Constraints. The Operation on which the WCET constraint applies is identified through regular properties of the underlying UML Constraint. Examples are given through the &quot;A NFPs&quot; class.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_H8uGINZ_EeS949D91HcCwA">
+      <annotatedElement xmi:type="uml:Class" href="../requirements/OpenES_Requirements.uml#_LcVsYDg2EeSL_oCrEVX-XQ"/>
+      <annotatedElement xmi:type="uml:Class" href="../common/Opens_T12_T13_examples.uml#_ozzYQNZ8EeS949D91HcCwA"/>
+      <body>The requirement 40 by defining NFPs using MARTE (i.e., UML properties with MARTE stereotype applied on those properties), and then specifying NFP_Constraints on those NFPs (just like other NFP related requirements, such as requirement 20). The specific use case on which the constraints apply is identified though a specific scenario, which is modeled using a sequence diagram. If a constraint applies on the overall scenario,  then the scenario shall be the constrained element of the underlying UML constraint. If the constraint only concerns a sub-system within the scenario, then the constrained element of the underlying constraint shall be a LifeLine of the context scenario (where this life line represents the specific sub-system). An example is given with class Scenario NFP Requirement.</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uCzYcT85EeSMVO0Wc1d0pQ">
+      <importedPackage xmi:type="uml:Model" href="../requirements/OpenES_Requirements.uml#_7UYicDgWEeSW7vxfDQgMFw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_9NfxkNLUEeSxfJeW9LXdZg">
+      <importedPackage xmi:type="uml:Model" href="DOCEA_inputs.uml#_IYWswMJIEeSOA7ANqGznVw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_p_F2UNRxEeSqCKOitOAVvQ">
+      <importedPackage xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_nGAJED2yEeSD3JVrbK0RCg"/>
+    </packageImport>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uCzYcj85EeSMVO0Wc1d0pQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cmxzsNL4EeSxfJeW9LXdZg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cmxzsdL4EeSxfJeW9LXdZg" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cmxzstL4EeSxfJeW9LXdZg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cmxzs9L4EeSxfJeW9LXdZg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cmxztNL4EeSxfJeW9LXdZg" key="Date" value="2015-03-25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cmxztdL4EeSxfJeW9LXdZg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uCzYcz85EeSMVO0Wc1d0pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../OSMKProfile/osmk.profile.uml#__2tKUdLmEeSxfJeW9LXdZg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../OSMKProfile/osmk.profile.uml#_jWyfgD8qEeSQQvkAoKcNfQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4O2gMEJvEeSQQvkAoKcNfQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4PYEoEJvEeSQQvkAoKcNfQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4PYEoUJvEeSQQvkAoKcNfQ" key="Version" value="0.0.6"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4PYEokJvEeSQQvkAoKcNfQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4PYEo0JvEeSQQvkAoKcNfQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4PYEpEJvEeSQQvkAoKcNfQ" key="Date" value="2014-09-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4PYEpUJvEeSQQvkAoKcNfQ" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4PWPcEJvEeSQQvkAoKcNfQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../OSMK/osmk.profile.uml#_zk52cT82EeSQQvkAoKcNfQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../../OSMK/osmk.profile.uml#_U-5z8D8qEeSQQvkAoKcNfQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirement:Satisfy xmi:id="_uOec8D85EeSMVO0Wc1d0pQ" base_Comment="_uFijYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOg5MD85EeSMVO0Wc1d0pQ" base_Comment="_uOgSID85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOiHUD85EeSMVO0Wc1d0pQ" base_Comment="_uOhgQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOjVcD85EeSMVO0Wc1d0pQ" base_Comment="_uOiuYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOlxsD85EeSMVO0Wc1d0pQ" base_Comment="_uOlKoD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOm_0D85EeSMVO0Wc1d0pQ" base_Comment="_uOmYwD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOoN8D85EeSMVO0Wc1d0pQ" base_Comment="_uOnm4D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOpcED85EeSMVO0Wc1d0pQ" base_Comment="_uOo1AD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOqqMD85EeSMVO0Wc1d0pQ" base_Comment="_uOqDID85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOrRQT85EeSMVO0Wc1d0pQ" base_Comment="_uOrRQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOsfYT85EeSMVO0Wc1d0pQ" base_Comment="_uOsfYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOuUkD85EeSMVO0Wc1d0pQ" base_Comment="_uOttgD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOvisD85EeSMVO0Wc1d0pQ" base_Comment="_uOu7oD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOwJwT85EeSMVO0Wc1d0pQ" base_Comment="_uOwJwD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOxX4T85EeSMVO0Wc1d0pQ" base_Comment="_uOxX4D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOymAT85EeSMVO0Wc1d0pQ" base_Comment="_uOymAD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uOz0IT85EeSMVO0Wc1d0pQ" base_Comment="_uOz0ID85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO1CQT85EeSMVO0Wc1d0pQ" base_Comment="_uO1CQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO2QYD85EeSMVO0Wc1d0pQ" base_Comment="_uO1pUD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO3egD85EeSMVO0Wc1d0pQ" base_Comment="_uO23cD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO4soD85EeSMVO0Wc1d0pQ" base_Comment="_uO4FkD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO56wD85EeSMVO0Wc1d0pQ" base_Comment="_uO5TsD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO7I4D85EeSMVO0Wc1d0pQ" base_Comment="_uO6h0D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO7v8T85EeSMVO0Wc1d0pQ" base_Comment="_uO7v8D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO8-ET85EeSMVO0Wc1d0pQ" base_Comment="_uO8-ED85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uO_aUD85EeSMVO0Wc1d0pQ" base_Comment="_uO-zQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPABYT85EeSMVO0Wc1d0pQ" base_Comment="_uPABYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPBPgT85EeSMVO0Wc1d0pQ" base_Comment="_uPBPgD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPCdoD85EeSMVO0Wc1d0pQ" base_Comment="_uPB2kD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPDrwD85EeSMVO0Wc1d0pQ" base_Comment="_uPDEsD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPES0T85EeSMVO0Wc1d0pQ" base_Comment="_uPES0D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPFg8T85EeSMVO0Wc1d0pQ" base_Comment="_uPFg8D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPGvED85EeSMVO0Wc1d0pQ" base_Comment="_uPGIAD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPH9MD85EeSMVO0Wc1d0pQ" base_Comment="_uPHWID85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPIkQT85EeSMVO0Wc1d0pQ" base_Comment="_uPIkQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPJyYT85EeSMVO0Wc1d0pQ" base_Comment="_uPJyYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPLAgD85EeSMVO0Wc1d0pQ" base_Comment="_uPKZcD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPLnkT85EeSMVO0Wc1d0pQ" base_Comment="_uPLnkD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPM1sT85EeSMVO0Wc1d0pQ" base_Comment="_uPM1sD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPOD0D85EeSMVO0Wc1d0pQ" base_Comment="_uPNcwD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPOq4T85EeSMVO0Wc1d0pQ" base_Comment="_uPOq4D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPP5AD85EeSMVO0Wc1d0pQ" base_Comment="_uPPR8D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPRHID85EeSMVO0Wc1d0pQ" base_Comment="_uPQgED85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPRuMT85EeSMVO0Wc1d0pQ" base_Comment="_uPRuMD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPS8UD85EeSMVO0Wc1d0pQ" base_Comment="_uPSVQD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPTjYT85EeSMVO0Wc1d0pQ" base_Comment="_uPTjYD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPUxgD85EeSMVO0Wc1d0pQ" base_Comment="_uPUKcD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPVYkT85EeSMVO0Wc1d0pQ" base_Comment="_uPVYkD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPV_oT85EeSMVO0Wc1d0pQ" base_Comment="_uPV_oD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPXNwD85EeSMVO0Wc1d0pQ" base_Comment="_uPWmsD85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_uPX00T85EeSMVO0Wc1d0pQ" base_Comment="_uPX00D85EeSMVO0Wc1d0pQ"/>
+  <Requirement:Satisfy xmi:id="_fO7w4EJtEeSQQvkAoKcNfQ" base_Comment="_aSS3wEJtEeSQQvkAoKcNfQ"/>
+  <Requirement:Satisfy xmi:id="_QAQvkEWUEeSV4M5t5MtZFw" base_Comment="_OL09gEWUEeSV4M5t5MtZFw"/>
+  <Requirement:Satisfy xmi:id="_eaII4NRyEeSqCKOitOAVvQ" base_Comment="_dVgqMNRyEeSqCKOitOAVvQ"/>
+  <Requirement:Satisfy xmi:id="_pRh9cNZ5EeS949D91HcCwA" base_Comment="_mkE4sNZ5EeS949D91HcCwA"/>
+  <Requirement:Satisfy xmi:id="_z9d7sNZ5EeS949D91HcCwA" base_Comment="_vCSbINZ5EeS949D91HcCwA"/>
+  <Requirement:Satisfy xmi:id="_4sIqQNZ5EeS949D91HcCwA" base_Comment="_21BXoNZ5EeS949D91HcCwA"/>
+  <Requirement:Satisfy xmi:id="_Us6bINZ_EeS949D91HcCwA" base_Comment="_H8uGINZ_EeS949D91HcCwA"/>
+</xmi:XMI>

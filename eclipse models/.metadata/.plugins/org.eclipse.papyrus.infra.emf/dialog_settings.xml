@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Namespace:context">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history_container_uml:Namespace:context">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Element:constrainedElement">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/Timer_interrupt/model.uml#_ZfIhYC9-EeWyX7UKkcyxiw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/Timer_interrupt/model.uml:uml:Constraint:postcondition">
+	</section>
+</section>

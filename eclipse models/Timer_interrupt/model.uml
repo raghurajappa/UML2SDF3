@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_OlYJkC9-EeWyX7UKkcyxiw" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_OlYJkS9-EeWyX7UKkcyxiw" name="Activity1" node="_XjLyEC9-EeWyX7UKkcyxiw _ZfIhYC9-EeWyX7UKkcyxiw _cK4V8C9-EeWyX7UKkcyxiw _fE2zwC9-EeWyX7UKkcyxiw _F67sgC9_EeWyX7UKkcyxiw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jzMLIC9-EeWyX7UKkcyxiw" name="ControlFlow" source="_XjLyEC9-EeWyX7UKkcyxiw" target="_ZfIhYC9-EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lieXcC9-EeWyX7UKkcyxiw" name="ControlFlow1" source="_ZfIhYC9-EeWyX7UKkcyxiw" target="_cK4V8C9-EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_m0Vn8C9-EeWyX7UKkcyxiw" name="Timer expired" source="_cK4V8C9-EeWyX7UKkcyxiw" target="_fE2zwC9-EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wrhvgC9-EeWyX7UKkcyxiw" name="Timer not expired" source="_cK4V8C9-EeWyX7UKkcyxiw" target="_cK4V8C9-EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Hcj3UC9_EeWyX7UKkcyxiw" name="ControlFlow2" source="_fE2zwC9-EeWyX7UKkcyxiw" target="_F67sgC9_EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_XjLyEC9-EeWyX7UKkcyxiw" name="Start" outgoing="_jzMLIC9-EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZfIhYC9-EeWyX7UKkcyxiw" name="Load and Enable Timer" visibility="package" outgoing="_lieXcC9-EeWyX7UKkcyxiw" incoming="_jzMLIC9-EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_cK4V8C9-EeWyX7UKkcyxiw" name="Has timer expired?" outgoing="_m0Vn8C9-EeWyX7UKkcyxiw _wrhvgC9-EeWyX7UKkcyxiw" incoming="_lieXcC9-EeWyX7UKkcyxiw _wrhvgC9-EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_fE2zwC9-EeWyX7UKkcyxiw" name="Service the Timer ISR" outgoing="_Hcj3UC9_EeWyX7UKkcyxiw" incoming="_m0Vn8C9-EeWyX7UKkcyxiw">
+      <inputValue xmi:type="uml:ActionInputPin" xmi:id="_82lIMDRBEeWdiarL2UAMaQ" name="interrupt">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_82lIMTRBEeWdiarL2UAMaQ" value="1"/>
+      </inputValue>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_F67sgC9_EeWyX7UKkcyxiw" name="ActivityFinalNode" incoming="_Hcj3UC9_EeWyX7UKkcyxiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_Olal1C9-EeWyX7UKkcyxiw" name="StateMachine0">
+    <region xmi:type="uml:Region" xmi:id="_Olal1S9-EeWyX7UKkcyxiw" name="Region0">
+      <transition xmi:type="uml:Transition" xmi:id="_4XtEwDQjEeWdiarL2UAMaQ" name="Timer interrupt enabled" source="_tdVo8DQjEeWdiarL2UAMaQ" target="_vp1VsDQjEeWdiarL2UAMaQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_DJfMUDQkEeWdiarL2UAMaQ" name="Timer expired" source="_vp1VsDQjEeWdiarL2UAMaQ" target="_yZbvgDQjEeWdiarL2UAMaQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HZ9jADQkEeWdiarL2UAMaQ" name="Enter ISR" source="_yZbvgDQjEeWdiarL2UAMaQ" target="_0rZLEDQjEeWdiarL2UAMaQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Po1B4DQkEeWdiarL2UAMaQ" name="ISR serviced" source="_0rZLEDQjEeWdiarL2UAMaQ" target="_M5npoDQkEeWdiarL2UAMaQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_tdVo8DQjEeWdiarL2UAMaQ" name="Start"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vp1VsDQjEeWdiarL2UAMaQ" name="Enable Timer"/>
+      <subvertex xmi:type="uml:State" xmi:id="_yZbvgDQjEeWdiarL2UAMaQ" name="Enable ISR"/>
+      <subvertex xmi:type="uml:State" xmi:id="_0rZLEDQjEeWdiarL2UAMaQ" name="Service ISR"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_M5npoDQkEeWdiarL2UAMaQ" name="End"/>
+    </region>
+  </packagedElement>
+</uml:Model>

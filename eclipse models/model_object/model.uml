@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_RmzFcC95EeWyX7UKkcyxiw" name="model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_RoDpsC95EeWyX7UKkcyxiw" name="Activity1" node="_eroNsC95EeWyX7UKkcyxiw _ksdHsC95EeWyX7UKkcyxiw _sxmp4C95EeWyX7UKkcyxiw _cP31kC98EeWyX7UKkcyxiw _649ewC98EeWyX7UKkcyxiw">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_yP3FgC99EeWyX7UKkcyxiw" annotatedElement="_cP31kC98EeWyX7UKkcyxiw">
+      <body>object detected successfully?</body>
+    </ownedComment>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8iN7kC98EeWyX7UKkcyxiw" name="Object not detected" visibility="public" source="_cP31kC98EeWyX7UKkcyxiw" target="_649ewC98EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FKW2EC99EeWyX7UKkcyxiw" name="ControlFlow" source="_ksdHsC95EeWyX7UKkcyxiw" target="_cP31kC98EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QIbGIC99EeWyX7UKkcyxiw" name="object detected" source="_cP31kC98EeWyX7UKkcyxiw" target="_sxmp4C95EeWyX7UKkcyxiw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_agJH4C99EeWyX7UKkcyxiw" name="ControlFlow1" source="_eroNsC95EeWyX7UKkcyxiw" target="_ksdHsC95EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_eroNsC95EeWyX7UKkcyxiw" name="Start" outgoing="_agJH4C99EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ksdHsC95EeWyX7UKkcyxiw" name="Run &quot;detect object&quot; algorithm" outgoing="_FKW2EC99EeWyX7UKkcyxiw" incoming="_agJH4C99EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sxmp4C95EeWyX7UKkcyxiw" name="Run &quot;track object&quot; algorithm" incoming="_QIbGIC99EeWyX7UKkcyxiw">
+      <inputValue xmi:type="uml:ActionInputPin" xmi:id="_Y5yJsDRBEeWdiarL2UAMaQ" name="Object detected">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Y50l8DRBEeWdiarL2UAMaQ" value="1"/>
+      </inputValue>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_cP31kC98EeWyX7UKkcyxiw" name="Object detection successful?" outgoing="_8iN7kC98EeWyX7UKkcyxiw _QIbGIC99EeWyX7UKkcyxiw" incoming="_FKW2EC99EeWyX7UKkcyxiw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_649ewC98EeWyX7UKkcyxiw" name="End" incoming="_8iN7kC98EeWyX7UKkcyxiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_RuPxQC95EeWyX7UKkcyxiw" name="Interaction1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_RuqoAC95EeWyX7UKkcyxiw" name="StateMachine0">
+    <region xmi:type="uml:Region" xmi:id="_RuvggC95EeWyX7UKkcyxiw" name="Region0">
+      <transition xmi:type="uml:Transition" xmi:id="_5yUxkC-iEeWyX7UKkcyxiw" name="System_On" source="_mtmjcC-iEeWyX7UKkcyxiw" target="_pSeT8C-iEeWyX7UKkcyxiw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Hqur0C-jEeWyX7UKkcyxiw" name="Enable search" source="_pSeT8C-iEeWyX7UKkcyxiw" target="_PwXysC-iEeWyX7UKkcyxiw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QvOyMC-jEeWyX7UKkcyxiw" name="Object found" source="_PwXysC-iEeWyX7UKkcyxiw" target="_hUg-4C-iEeWyX7UKkcyxiw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Tzz9gC-jEeWyX7UKkcyxiw" name="Tracking success" source="_hUg-4C-iEeWyX7UKkcyxiw" target="_3gt7UC-iEeWyX7UKkcyxiw"/>
+      <subvertex xmi:type="uml:State" xmi:id="_PwXysC-iEeWyX7UKkcyxiw" name="Object detect"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hUg-4C-iEeWyX7UKkcyxiw" name="Track Object"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_mtmjcC-iEeWyX7UKkcyxiw" name="Start"/>
+      <subvertex xmi:type="uml:State" xmi:id="_pSeT8C-iEeWyX7UKkcyxiw" name="Initialization"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_3gt7UC-iEeWyX7UKkcyxiw" name="End"/>
+    </region>
+  </packagedElement>
+</uml:Model>

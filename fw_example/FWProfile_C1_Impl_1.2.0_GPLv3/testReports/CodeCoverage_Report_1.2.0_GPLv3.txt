@@ -1,0 +1,574 @@
+===================================================================================
+This is the Code Coverage Report of the FW Profile
+Generated: Thu Jul 18 19:40:11 CEST 2013
+Copyright: P&P Software GmbH, 2013, All Rights Reserved
+FW Profile Version: 1.2.0_GPLv3
+===================================================================================
+
+File '/home/pnp/Dump/src/FwProfile/FwPrConfig.c'
+Lines executed:100.00% of 196
+Branches executed:100.00% of 116
+Taken at least once:99.14% of 116
+Calls executed:100.00% of 10
+/home/pnp/Dump/src/FwProfile/FwPrConfig.c:creating 'FwPrConfig.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwPrCore.c'
+Lines executed:100.00% of 59
+Branches executed:100.00% of 20
+Taken at least once:100.00% of 20
+Calls executed:100.00% of 6
+/home/pnp/Dump/src/FwProfile/FwPrCore.c:creating 'FwPrCore.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwPrDCreate.c'
+Lines executed:90.20% of 102
+Branches executed:100.00% of 52
+Taken at least once:80.77% of 52
+Calls executed:100.00% of 1
+/home/pnp/Dump/src/FwProfile/FwPrDCreate.c:creating 'FwPrDCreate.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwPrSCreate.c'
+Lines executed:100.00% of 33
+Branches executed:100.00% of 18
+Taken at least once:100.00% of 18
+No calls
+/home/pnp/Dump/src/FwProfile/FwPrSCreate.c:creating 'FwPrSCreate.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwSmConfig.c'
+Lines executed:100.00% of 220
+Branches executed:100.00% of 130
+Taken at least once:99.23% of 130
+Calls executed:100.00% of 14
+/home/pnp/Dump/src/FwProfile/FwSmConfig.c:creating 'FwSmConfig.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwSmCore.c'
+Lines executed:100.00% of 105
+Branches executed:100.00% of 44
+Taken at least once:100.00% of 44
+Calls executed:100.00% of 17
+/home/pnp/Dump/src/FwProfile/FwSmCore.c:creating 'FwSmCore.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwSmDCreate.c'
+Lines executed:90.40% of 125
+Branches executed:100.00% of 70
+Taken at least once:82.86% of 70
+Calls executed:100.00% of 4
+/home/pnp/Dump/src/FwProfile/FwSmDCreate.c:creating 'FwSmDCreate.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwSmSCreate.c'
+Lines executed:100.00% of 37
+Branches executed:100.00% of 20
+Taken at least once:100.00% of 20
+No calls
+/home/pnp/Dump/src/FwProfile/FwSmSCreate.c:creating 'FwSmSCreate.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwRtConfig.c'
+Lines executed:77.27% of 132
+Branches executed:100.00% of 52
+Taken at least once:80.77% of 52
+Calls executed:100.00% of 10
+/home/pnp/Dump/src/FwProfile/FwRtConfig.c:creating 'FwRtConfig.c.gcov'
+
+File '/home/pnp/Dump/src/FwProfile/FwRtCore.c'
+Lines executed:64.84% of 128
+Branches executed:100.00% of 52
+Taken at least once:71.15% of 52
+Calls executed:100.00% of 30
+/home/pnp/Dump/src/FwProfile/FwRtCore.c:creating 'FwRtCore.c.gcov'
+
+FwPrConfig.c.gcov-        -:  275:	/* Identify location where newly added control flow will be stored in the control flow array.
+FwPrConfig.c.gcov-        -:  276:	 * Note that the nOfOutFlows is guaranteed to be greater than zero by the way it is
+FwPrConfig.c.gcov-        -:  277:	 * initialized in the previous statements in this function. Hence, the loop will be
+FwPrConfig.c.gcov-        -:  278:	 * taken at least once. */
+FwPrConfig.c.gcov-      267:  279:	for (i=0; i<nOfOutFlows; i++)
+FwPrConfig.c.gcov-branch  0 taken 100%
+FwPrConfig.c.gcov:branch  1 taken 0% (fallthrough)
+--
+FwPrDCreate.c.gcov-branch  0 taken 3% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 97%
+FwPrDCreate.c.gcov-        1:   56:		return NULL;
+FwPrDCreate.c.gcov-        -:   57:
+FwPrDCreate.c.gcov-       35:   58:	prDesc = (FwPrDesc_t) malloc(sizeof(struct FwPrDesc));
+FwPrDCreate.c.gcov-       35:   59:	if (prDesc == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   60:		return NULL;
+FwPrDCreate.c.gcov-        -:   61:
+FwPrDCreate.c.gcov-       35:   62:	prBase = (PrBaseDesc_t*) malloc(sizeof(PrBaseDesc_t));
+FwPrDCreate.c.gcov-       35:   63:	if (prBase == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   64:		return NULL;
+FwPrDCreate.c.gcov-        -:   65:
+FwPrDCreate.c.gcov-       35:   66:	prBase->aNodes = (PrANode_t*) malloc((nOfANodes)*sizeof(PrANode_t));
+FwPrDCreate.c.gcov-       35:   67:	if (prBase->aNodes == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   68:		return NULL;
+--
+FwPrDCreate.c.gcov-        -:   71:
+FwPrDCreate.c.gcov-       35:   72:	if (nOfDNodes > 0) {
+FwPrDCreate.c.gcov-branch  0 taken 63% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 37%
+FwPrDCreate.c.gcov-       22:   73:		prBase->dNodes = (PrDNode_t*) malloc((nOfDNodes)*sizeof(PrDNode_t));
+FwPrDCreate.c.gcov-       22:   74:		if (prBase->dNodes == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   75:			return NULL;
+--
+FwPrDCreate.c.gcov-       34:   77:			prBase->dNodes[i].outFlowIndex = -1;
+FwPrDCreate.c.gcov-        -:   78:	} else
+FwPrDCreate.c.gcov-       13:   79:		prBase->dNodes = NULL;
+FwPrDCreate.c.gcov-        -:   80:
+FwPrDCreate.c.gcov-       35:   81:	prBase->flows = (PrFlow_t*) malloc((nOfFlows)*sizeof(PrFlow_t));
+FwPrDCreate.c.gcov-       35:   82:	if (prBase->flows == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   83:		return NULL;
+--
+FwPrDCreate.c.gcov-branch  0 taken 85%
+FwPrDCreate.c.gcov-branch  1 taken 15% (fallthrough)
+FwPrDCreate.c.gcov-      194:   85:		prBase->flows[i].iGuard = -1;
+FwPrDCreate.c.gcov-        -:   86:
+FwPrDCreate.c.gcov-       35:   87:	prDesc->prActions = (FwPrAction_t*) malloc((nOfActions)*sizeof(FwPrAction_t));
+FwPrDCreate.c.gcov-       35:   88:	if (prDesc->prActions == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   89:		return NULL;
+--
+FwPrDCreate.c.gcov-branch  0 taken 51%
+FwPrDCreate.c.gcov-branch  1 taken 49% (fallthrough)
+FwPrDCreate.c.gcov-       36:   91:		prDesc->prActions[i] = NULL;
+FwPrDCreate.c.gcov-        -:   92:
+FwPrDCreate.c.gcov-       35:   93:	prDesc->prGuards = (FwPrGuard_t*) malloc((nOfGuards+1)*sizeof(FwPrGuard_t));
+FwPrDCreate.c.gcov-       35:   94:	if (prDesc->prGuards == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:   95:		return NULL;
+--
+FwPrDCreate.c.gcov-        5:  120:	PrBaseDesc_t* prBase = prDesc->prBase;
+FwPrDCreate.c.gcov-        -:  121:	FwPrDesc_t extPrDesc;
+FwPrDCreate.c.gcov-        -:  122:
+FwPrDCreate.c.gcov-        -:  123:	/* Create descriptor for derived SM */
+FwPrDCreate.c.gcov-        5:  124:	extPrDesc = (FwPrDesc_t) malloc(sizeof(struct FwPrDesc));
+FwPrDCreate.c.gcov-        5:  125:	if (extPrDesc == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:  126:		return NULL;
+FwPrDCreate.c.gcov-        -:  127:
+FwPrDCreate.c.gcov-        -:  128:	/* Create array of actions in the derived SM */
+FwPrDCreate.c.gcov-        5:  129:	extPrDesc->prActions = (FwPrAction_t*) malloc((prDesc->nOfActions)*sizeof(FwPrAction_t));
+FwPrDCreate.c.gcov-        5:  130:		if (extPrDesc->prActions == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:  131:			return NULL;
+--
+FwPrDCreate.c.gcov-branch  1 taken 50% (fallthrough)
+FwPrDCreate.c.gcov-        5:  133:		extPrDesc->prActions[i] = prDesc->prActions[i];
+FwPrDCreate.c.gcov-        -:  134:
+FwPrDCreate.c.gcov-        -:  135:	/* Create array of guards in the derived SM (NB: number of guards is guaranteed to be greater than 0 */
+FwPrDCreate.c.gcov-        5:  136:	extPrDesc->prGuards = (FwPrGuard_t*) malloc((prDesc->nOfGuards)*sizeof(FwPrGuard_t));
+FwPrDCreate.c.gcov-        5:  137:	if (extPrDesc->prGuards == NULL)
+FwPrDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwPrDCreate.c.gcov-branch  1 taken 100%
+FwPrDCreate.c.gcov:    #####:  138:		return NULL;
+--
+FwRtConfig.c.gcov-        -:   67:	/* Initialize mutex attributes */
+FwRtConfig.c.gcov-       15:   68:	if (rtDesc->pMutexAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:   69:		if ((errCode = pthread_mutexattr_init(rtDesc->pMutexAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:   70:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:   71:			rtDesc->state = rtMutexAttrInitErr;
+FwRtConfig.c.gcov:    #####:   72:			return;
+--
+FwRtConfig.c.gcov-        -:   75:	/* Initialize condition variable attributes */
+FwRtConfig.c.gcov-       15:   76:	if (rtDesc->pCondAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:   77:		if ((errCode = pthread_condattr_init(rtDesc->pCondAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:   78:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:   79:			rtDesc->state = rtCondAttrInitErr;
+FwRtConfig.c.gcov:    #####:   80:			return;
+--
+FwRtConfig.c.gcov-        -:   83:	/* Initialize thread attributes */
+FwRtConfig.c.gcov-       15:   84:	if (rtDesc->pThreadAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:   85:		if ((errCode = pthread_attr_init(rtDesc->pThreadAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:   86:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:   87:			rtDesc->state = rtThreadAttrInitErr;
+FwRtConfig.c.gcov:    #####:   88:			return;
+FwRtConfig.c.gcov-        -:   89:		}
+FwRtConfig.c.gcov-        -:   90:
+FwRtConfig.c.gcov-        -:   91:	/* Initialize mutex */
+FwRtConfig.c.gcov-       15:   92:	if ((errCode = pthread_mutex_init( &(rtDesc->mutex), rtDesc->pMutexAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:   93:		 rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:   94:		 rtDesc->state = rtMutexInitErr;
+FwRtConfig.c.gcov:    #####:   95:		 return;
+FwRtConfig.c.gcov-        -:   96:	}
+FwRtConfig.c.gcov-        -:   97:
+FwRtConfig.c.gcov-        -:   98:	/* Initialize condition variable */
+FwRtConfig.c.gcov-       15:   99:	if ((errCode = pthread_cond_init( &(rtDesc->cond), rtDesc->pCondAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  100:		 rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  101:		 rtDesc->state = rtCondInitErr;
+FwRtConfig.c.gcov:    #####:  102:		 return;
+--
+FwRtConfig.c.gcov-        -:  112:	/* Destroy mutex attributes */
+FwRtConfig.c.gcov-       15:  113:	if (rtDesc->pMutexAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:  114:		if ((errCode = pthread_mutexattr_destroy(rtDesc->pMutexAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  115:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  116:			rtDesc->state = rtMutexAttrDestroyErr;
+FwRtConfig.c.gcov:    #####:  117:			return;
+--
+FwRtConfig.c.gcov-        -:  120:	/* Destroy condition variable attributes */
+FwRtConfig.c.gcov-       15:  121:	if (rtDesc->pCondAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:  122:		if ((errCode = pthread_condattr_destroy(rtDesc->pCondAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  123:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  124:			rtDesc->state = rtCondAttrDestroyErr;
+FwRtConfig.c.gcov:    #####:  125:			return;
+--
+FwRtConfig.c.gcov-        -:  128:	/* Destroy thread attributes */
+FwRtConfig.c.gcov-       15:  129:	if (rtDesc->pThreadAttr != NULL)
+FwRtConfig.c.gcov-branch  0 taken 13% (fallthrough)
+FwRtConfig.c.gcov-branch  1 taken 87%
+FwRtConfig.c.gcov-        2:  130:		if ((errCode = pthread_attr_destroy(rtDesc->pThreadAttr)) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  131:			rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  132:			rtDesc->state = rtThreadAttrDestroyErr;
+FwRtConfig.c.gcov:    #####:  133:			return;
+FwRtConfig.c.gcov-        -:  134:		}
+FwRtConfig.c.gcov-        -:  135:
+FwRtConfig.c.gcov-       15:  136:	if ((errCode = pthread_cond_destroy(&(rtDesc->cond))) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  137:		 rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  138:		 rtDesc->state = rtCondDestroyErr;
+FwRtConfig.c.gcov:    #####:  139:		 return;
+FwRtConfig.c.gcov-        -:  140:	}
+FwRtConfig.c.gcov-        -:  141:
+FwRtConfig.c.gcov-       15:  142:	if ((errCode = pthread_mutex_destroy(&(rtDesc->mutex))) != 0) {
+FwRtConfig.c.gcov-call    0 returned 100%
+FwRtConfig.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtConfig.c.gcov-branch  2 taken 100%
+FwRtConfig.c.gcov:    #####:  143:		 rtDesc->errCode = errCode;
+FwRtConfig.c.gcov:    #####:  144:		 rtDesc->state = rtMutexDestroyErr;
+FwRtConfig.c.gcov:    #####:  145:		 return;
+--
+FwRtCore.c.gcov-function FwRtStart called 717 returned 100% blocks executed 79%
+FwRtCore.c.gcov-      717:   54:void FwRtStart(FwRtDesc_t rtDesc) {
+FwRtCore.c.gcov-        -:   55:	int errCode;
+FwRtCore.c.gcov-        -:   56:
+FwRtCore.c.gcov-      717:   57:	if ((errCode = pthread_mutex_lock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:   58:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:   59:		 rtDesc->state = rtMutexLockErr;
+FwRtCore.c.gcov:    #####:   60:		 return;
+--
+FwRtCore.c.gcov-        -:   62:
+FwRtCore.c.gcov-      717:   63:	if (rtDesc->state != rtContStopped) {
+FwRtCore.c.gcov-branch  0 taken 1% (fallthrough)
+FwRtCore.c.gcov-branch  1 taken 99%
+FwRtCore.c.gcov-        2:   64:		if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:   65:			 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:   66:			 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:   67:			 return;
+--
+FwRtCore.c.gcov-      715:   84:	rtDesc->state = rtContStarted;
+FwRtCore.c.gcov-      715:   85:	rtDesc->notifCounter = 0;
+FwRtCore.c.gcov-        -:   86:
+FwRtCore.c.gcov-        -:   87:	/* Create thread */
+FwRtCore.c.gcov-      715:   88:	if ((errCode = pthread_create( &(rtDesc->activationThread), rtDesc->pThreadAttr,
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov-        -:   89:														ExecActivThread, rtDesc)) != 0) {
+FwRtCore.c.gcov:    #####:   90:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:   91:		 rtDesc->state = rtThreadCreateErr;
+FwRtCore.c.gcov:    #####:   92:		 return;
+FwRtCore.c.gcov-        -:   93:	}
+FwRtCore.c.gcov-        -:   94:
+FwRtCore.c.gcov-      715:   95:	if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:   96:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:   97:		 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:   98:		 return;
+--
+FwRtCore.c.gcov-function FwRtStop called 675 returned 100% blocks executed 75%
+FwRtCore.c.gcov-      675:  105:void FwRtStop(FwRtDesc_t rtDesc) {
+FwRtCore.c.gcov-        -:  106:	int errCode;
+FwRtCore.c.gcov-        -:  107:
+FwRtCore.c.gcov-      675:  108:	if ((errCode = pthread_mutex_lock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  109:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  110:		 rtDesc->state = rtMutexLockErr;
+FwRtCore.c.gcov:    #####:  111:		 return;
+--
+FwRtCore.c.gcov-        -:  113:
+FwRtCore.c.gcov-      675:  114:	if (rtDesc->state != rtContStarted) {
+FwRtCore.c.gcov-branch  0 taken 1% (fallthrough)
+FwRtCore.c.gcov-branch  1 taken 99%
+FwRtCore.c.gcov-        2:  115:		if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  116:			 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  117:			 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:  118:			 return;
+--
+FwRtCore.c.gcov-        -:  125:
+FwRtCore.c.gcov-        -:  126:	/* Notify the Activation Thread */
+FwRtCore.c.gcov-      673:  127:	rtDesc->notifCounter++;
+FwRtCore.c.gcov-        -:  128:
+FwRtCore.c.gcov-      673:  129:	if ((errCode = pthread_cond_signal(&(rtDesc->cond))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  130:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  131:		 rtDesc->state = rtCondSignalErr;
+FwRtCore.c.gcov:    #####:  132:		 return;
+FwRtCore.c.gcov-        -:  133:	}
+FwRtCore.c.gcov-        -:  134:
+FwRtCore.c.gcov-      673:  135:	if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  136:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  137:		 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:  138:		 return;
+--
+FwRtCore.c.gcov-function FwRtNotify called 81380 returned 100% blocks executed 75%
+FwRtCore.c.gcov-    81380:  145:void FwRtNotify(FwRtDesc_t rtDesc) {
+FwRtCore.c.gcov-        -:  146:	int errCode;
+FwRtCore.c.gcov-        -:  147:
+FwRtCore.c.gcov-    81380:  148:	if ((errCode = pthread_mutex_lock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  149:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  150:		 rtDesc->state = rtMutexLockErr;
+FwRtCore.c.gcov:    #####:  151:		 return;
+FwRtCore.c.gcov-        -:  152:	}
+FwRtCore.c.gcov-    81380:  153:	ExecNotifProcedure(rtDesc);
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov-    81380:  154:	if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  155:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  156:		 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:  157:		 return;
+--
+FwRtCore.c.gcov-      715:  162:void FwRtWaitForTermination(FwRtDesc_t rtDesc) {
+FwRtCore.c.gcov-        -:  163:	int errCode;
+FwRtCore.c.gcov-      715:  164:	void* status = 0;
+FwRtCore.c.gcov-        -:  165:
+FwRtCore.c.gcov-      715:  166:	if ((errCode = pthread_join(rtDesc->activationThread,status)) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  167:		 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  168:		 rtDesc->state = rtJoinErr;
+FwRtCore.c.gcov:    #####:  169:		 return;
+--
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov-branch  1 taken 84% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 16%
+FwRtCore.c.gcov-    53479:  212:		rtDesc->notifCounter++;
+FwRtCore.c.gcov-    53479:  213:		if ((errCode = pthread_cond_signal(&(rtDesc->cond))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  214:			 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  215:			 rtDesc->state = rtCondSignalErr;
+FwRtCore.c.gcov:    #####:  216:			 return;
+--
+FwRtCore.c.gcov-      715:  245:	FwRtDesc_t rtDesc = (FwRtDesc_t) ptr;
+FwRtCore.c.gcov-        -:  246:	int errCode;
+FwRtCore.c.gcov-        -:  247:
+FwRtCore.c.gcov-        -:  248:	while (1) {
+FwRtCore.c.gcov-    51834:  249:		if ((errCode = pthread_mutex_lock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  250:			 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  251:			 rtDesc->state = rtMutexLockErr;
+FwRtCore.c.gcov:    #####:  252:			 return NULL;
+FwRtCore.c.gcov-        -:  253:		}
+FwRtCore.c.gcov-   123504:  254:		while (rtDesc->notifCounter == 0) {
+FwRtCore.c.gcov-branch  0 taken 28%
+FwRtCore.c.gcov-branch  1 taken 72% (fallthrough)
+FwRtCore.c.gcov-    19836:  255:			if ((errCode = pthread_cond_wait(&(rtDesc->cond),&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  256:				 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  257:				 rtDesc->state = rtCondWaitErr;
+FwRtCore.c.gcov:    #####:  258:				 return NULL;
+FwRtCore.c.gcov-        -:  259:			}
+FwRtCore.c.gcov-        -:  260:		}
+FwRtCore.c.gcov-    51834:  261:		rtDesc->notifCounter--;
+FwRtCore.c.gcov-    51834:  262:		if ((errCode = pthread_mutex_unlock(&(rtDesc->mutex))) != 0) {
+FwRtCore.c.gcov-call    0 returned 100%
+FwRtCore.c.gcov:branch  1 taken 0% (fallthrough)
+FwRtCore.c.gcov-branch  2 taken 100%
+FwRtCore.c.gcov:    #####:  263:			 rtDesc->errCode = errCode;
+FwRtCore.c.gcov:    #####:  264:			 rtDesc->state = rtMutexUnlockErr;
+FwRtCore.c.gcov:    #####:  265:			 return NULL;
+--
+FwSmConfig.c.gcov-        -:  276:	/* Identify location where newly added transition will be stored in the transition array.
+FwSmConfig.c.gcov-        -:  277:	 * Note that the nOfOutTrans is guaranteed to be greater than zero by the way it is
+FwSmConfig.c.gcov-        -:  278:	 * initialized in the previous statements in this function. Hence, the loop will be
+FwSmConfig.c.gcov-        -:  279:	 * taken at least once. */
+FwSmConfig.c.gcov-      577:  280:	for (i=0; i<nOfOutTrans; i++)
+FwSmConfig.c.gcov-branch  0 taken 100%
+FwSmConfig.c.gcov:branch  1 taken 0% (fallthrough)
+--
+FwSmDCreate.c.gcov-branch  0 taken 1% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 99%
+FwSmDCreate.c.gcov-        1:   50:		return NULL;
+FwSmDCreate.c.gcov-        -:   51:
+FwSmDCreate.c.gcov-       93:   52:	smDesc = (FwSmDesc_t) malloc(sizeof(struct FwSmDesc));
+FwSmDCreate.c.gcov-       93:   53:	if (smDesc == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   54:		return NULL;
+FwSmDCreate.c.gcov-        -:   55:
+FwSmDCreate.c.gcov-       93:   56:	smBase = (SmBaseDesc_t*) malloc(sizeof(SmBaseDesc_t));
+FwSmDCreate.c.gcov-       93:   57:	if (smBase == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   58:		return NULL;
+FwSmDCreate.c.gcov-        -:   59:
+FwSmDCreate.c.gcov-       93:   60:	if (nOfStates > 0) {
+FwSmDCreate.c.gcov-branch  0 taken 96% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 4%
+FwSmDCreate.c.gcov-       89:   61:		smBase->pStates = (SmPState_t*) malloc((nOfStates)*sizeof(SmPState_t));
+FwSmDCreate.c.gcov-       89:   62:		if (smBase->pStates == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   63:			return NULL;
+FwSmDCreate.c.gcov-      226:   64:		for (i=0; i<nOfStates; i++)
+FwSmDCreate.c.gcov-branch  0 taken 61%
+FwSmDCreate.c.gcov-branch  1 taken 39% (fallthrough)
+FwSmDCreate.c.gcov-      137:   65:			smBase->pStates[i].outTransIndex = 0;
+FwSmDCreate.c.gcov-       89:   66:		smDesc->esmDesc = (struct FwSmDesc**) malloc((nOfStates)*sizeof(FwSmDesc_t));
+FwSmDCreate.c.gcov-       89:   67:		if (smDesc->esmDesc == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   68:			return NULL;
+--
+FwSmDCreate.c.gcov-        -:   75:
+FwSmDCreate.c.gcov-       93:   76:	if (nOfChoicePseudoStates > 0) {
+FwSmDCreate.c.gcov-branch  0 taken 61% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 39%
+FwSmDCreate.c.gcov-       57:   77:		smBase->cStates = (SmCState_t*) malloc((nOfChoicePseudoStates)*sizeof(SmCState_t));
+FwSmDCreate.c.gcov-       57:   78:		if (smBase->cStates == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   79:			return NULL;
+--
+FwSmDCreate.c.gcov-       58:   81:			smBase->cStates[i].outTransIndex = 0;
+FwSmDCreate.c.gcov-        -:   82:	} else
+FwSmDCreate.c.gcov-       36:   83:		smBase->cStates = NULL;
+FwSmDCreate.c.gcov-        -:   84:
+FwSmDCreate.c.gcov-       93:   85:	smBase->trans = (SmTrans_t*) malloc((nOfTrans)*sizeof(SmTrans_t));
+FwSmDCreate.c.gcov-       93:   86:	if (smBase->trans == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   87:		return NULL;
+--
+FwSmDCreate.c.gcov-branch  0 taken 81%
+FwSmDCreate.c.gcov-branch  1 taken 19% (fallthrough)
+FwSmDCreate.c.gcov-      393:   89:		smBase->trans[i].iTrAction = -1;
+FwSmDCreate.c.gcov-        -:   90:
+FwSmDCreate.c.gcov-       93:   91:	smDesc->smActions = (FwSmAction_t*) malloc((nOfActions+1)*sizeof(FwSmAction_t));
+FwSmDCreate.c.gcov-       93:   92:	if (smDesc->smActions == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:   93:		return NULL;
+--
+FwSmDCreate.c.gcov-branch  0 taken 70%
+FwSmDCreate.c.gcov-branch  1 taken 30% (fallthrough)
+FwSmDCreate.c.gcov-      213:   96:		smDesc->smActions[i] = NULL;
+FwSmDCreate.c.gcov-        -:   97:
+FwSmDCreate.c.gcov-       93:   98:	smDesc->smGuards = (FwSmGuard_t*) malloc((nOfGuards+1)*sizeof(FwSmGuard_t));
+FwSmDCreate.c.gcov-       93:   99:	if (smDesc->smGuards == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:  100:		return NULL;
+--
+FwSmDCreate.c.gcov-        9:  124:	SmBaseDesc_t* smBase = smDesc->smBase;
+FwSmDCreate.c.gcov-        -:  125:	FwSmDesc_t extSmDesc;
+FwSmDCreate.c.gcov-        -:  126:
+FwSmDCreate.c.gcov-        -:  127:	/* Create descriptor for derived SM */
+FwSmDCreate.c.gcov-        9:  128:	extSmDesc = (FwSmDesc_t) malloc(sizeof(struct FwSmDesc));
+FwSmDCreate.c.gcov-        9:  129:	if (extSmDesc == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:  130:		return NULL;
+--
+FwSmDCreate.c.gcov-        -:  132:	/* Create array of embedded state machines in the derived SM */
+FwSmDCreate.c.gcov-        9:  133:	if (smBase->nOfPStates > 0) {
+FwSmDCreate.c.gcov-branch  0 taken 89% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 11%
+FwSmDCreate.c.gcov-        8:  134:		extSmDesc->esmDesc = (struct FwSmDesc**) malloc((smBase->nOfPStates)*sizeof(FwSmDesc_t));
+FwSmDCreate.c.gcov-        8:  135:		if (extSmDesc->esmDesc == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:  136:			return NULL;
+FwSmDCreate.c.gcov-        -:  137:	} else
+FwSmDCreate.c.gcov-        1:  138:		extSmDesc->esmDesc = NULL;
+FwSmDCreate.c.gcov-        -:  139:
+FwSmDCreate.c.gcov-        -:  140:	/* Create array of actions in the derived SM */
+FwSmDCreate.c.gcov-        9:  141:	extSmDesc->smActions = (FwSmAction_t*) malloc((smDesc->nOfActions)*sizeof(FwSmAction_t));
+FwSmDCreate.c.gcov-        9:  142:	if (extSmDesc->smActions == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:  143:		return NULL;
+--
+FwSmDCreate.c.gcov-branch  1 taken 19% (fallthrough)
+FwSmDCreate.c.gcov-       39:  145:		extSmDesc->smActions[i] = smDesc->smActions[i];
+FwSmDCreate.c.gcov-        -:  146:
+FwSmDCreate.c.gcov-        -:  147:	/* Create array of guards in the derived SM */
+FwSmDCreate.c.gcov-        9:  148:	extSmDesc->smGuards = (FwSmGuard_t*) malloc((smDesc->nOfGuards)*sizeof(FwSmGuard_t));
+FwSmDCreate.c.gcov-        9:  149:	if (extSmDesc->smGuards == NULL)
+FwSmDCreate.c.gcov:branch  0 taken 0% (fallthrough)
+FwSmDCreate.c.gcov-branch  1 taken 100%
+FwSmDCreate.c.gcov:    #####:  150:		return NULL;
